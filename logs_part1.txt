@@ -1,0 +1,43 @@
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{0}: rebase finished: returning to refs/heads/HW1-Git
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{1}: rebase: checkout develop
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{2}: checkout: moving from feature4 to HW1-Git
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{3}: rebase finished: returning to refs/heads/feature4
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{4}: rebase: checkout develop
+[33mfac505c[m HEAD@{5}: checkout: moving from feature3 to feature4
+[33md2f7866[m[33m ([m[1;32mfeature3[m[33m)[m HEAD@{6}: rebase finished: returning to refs/heads/feature3
+[33md2f7866[m[33m ([m[1;32mfeature3[m[33m)[m HEAD@{7}: rebase: HW1-Git: change image in index file
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{8}: rebase: checkout develop
+[33mc35cea1[m HEAD@{9}: checkout: moving from develop to feature3
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{10}: rebase finished: returning to refs/heads/develop
+[33m67fed0b[m[33m ([m[1;36mHEAD -> [m[1;32mHW1-Git[m[33m, [m[1;32mfeature4[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{11}: rebase: HW1-Git: create conflict
+[33m5129fc0[m HEAD@{12}: rebase: HW1-Git: change image in index file
+[33m71153bb[m HEAD@{13}: rebase: HW1-Git: add new image in folder images
+[33mfac505c[m HEAD@{14}: rebase: checkout feature4
+[33me28f924[m HEAD@{15}: rebase finished: returning to refs/heads/develop
+[33me28f924[m HEAD@{16}: rebase: HW1-Git: create conflict
+[33mc35cea1[m HEAD@{17}: rebase: checkout feature3
+[33mfb6794b[m HEAD@{18}: commit: HW1-Git: create conflict
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{19}: checkout: moving from feature4 to develop
+[33mfac505c[m HEAD@{20}: commit: HW1-Git: change style link in index file
+[33mbcbd667[m HEAD@{21}: commit: HW1-Git: add new style in folder styles
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{22}: checkout: moving from feature3 to feature4
+[33mc35cea1[m HEAD@{23}: commit: HW1-Git: change image in index file
+[33m767bc9a[m HEAD@{24}: commit: HW1-Git: add new image in folder images
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{25}: checkout: moving from HW1-Git to feature3
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{26}: merge develop: Fast-forward
+[33m4c86c25[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{27}: checkout: moving from feature2 to HW1-Git
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{28}: checkout: moving from feature1 to feature2
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{29}: merge develop: Fast-forward
+[33maa5a29e[m HEAD@{30}: checkout: moving from develop to feature1
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{31}: merge feature2: Fast-forward
+[33maa5a29e[m HEAD@{32}: merge feature1: Fast-forward
+[33m5b41855[m HEAD@{33}: checkout: moving from feature2 to develop
+[33m8e1bd8b[m[33m ([m[1;32mfeature2[m[33m, [m[1;32mfeature1[m[33m)[m HEAD@{34}: commit: HW1-Git: add style link to index file
+[33m8354b64[m HEAD@{35}: commit: HW1-Git: create folder styles
+[33maa5a29e[m HEAD@{36}: checkout: moving from feature1 to feature2
+[33maa5a29e[m HEAD@{37}: commit: HW1-Git: add image source to index file
+[33m91628eb[m HEAD@{38}: commit: HW1-Git: create folder images
+[33m5b41855[m HEAD@{39}: checkout: moving from develop to feature1
+[33m5b41855[m HEAD@{40}: commit: HW1-Git: create folder HW1-GIT, create index file
+[33m4c86c25[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{41}: checkout: moving from master to develop
+[33m4c86c25[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{42}: commit (initial): HW1-Git: init commit
