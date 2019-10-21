@@ -1,0 +1,14 @@
+1. was added <!DOCTYPE html>
+2. was added <html lang="en">
+3. was added <meta charset="UTF-8">
+4. was added <title>HW2-Html</title>
+5. <div class='up'> changed to <header class='up'>
+6. <img src='img/logo.png' alt="logo"> was added alt
+7. in all <div class='block'> is <legend align='center'> removed align='center'
+8. in all <div class='block'> is <legend><a href='#'><p class='title-s'>About us</p></a></legend> changed to <legend><a class='title-s' href='#'>About us</a></legend>
+9. in all <div class='block'> <legend align='center'><a href='#'><p class='title-s'>About us</p></a></legend> changed to <legend><a class='title-s block__link' href='#'>About us</a></legend>
+10. main.css, media.css was added style for .block__link
+11. in all <div class='block'> is <img> was added alt
+12. <div class='down'> changed to <footer class='down'>
+13. <img src='img/logo_reverse.png'> was added alt
+14. in the end </body> was added before </html>
