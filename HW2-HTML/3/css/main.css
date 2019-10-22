@@ -1,0 +1,28 @@
+td,
+th {
+  border: 1px solid grey;
+  height: 30px;
+  width: 100px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0 5px;
+  word-wrap: nowrap;
+}
+
+th {
+  background-color: #e0e0e0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.hidden-td {
+  border: none;
+  width: 0;
+}
+
+.hidden-tr td {
+  height: 0;
+  border: none;
+}
