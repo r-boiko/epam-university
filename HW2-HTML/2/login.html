@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2-Html: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="login">
+    <h1>Login</h1>
+    <fieldset>
+        <legend>Authorization</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="login">Login</label>
+                    </td>
+                    <td>
+                        <input type="email" name="login" id="login" placeholder="user@user.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text_center pt_15" colspan="2">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

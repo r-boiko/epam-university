@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2-Html: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="feedback">
+    <h1>Feedback</h1>
+    <fieldset>
+        <legend>Feedback</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="first_name">First name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="user@user.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pros">Pros</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pros" id="pros" placeholder="Main pros" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cons">Cons</label>
+                    </td>
+                    <td>
+                        <input type="text" name="cons" id="cons" placeholder="Main cons" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align_top">
+                        <label for="overview">Overview</label>
+                    </td>
+                    <td>
+                        <textarea name="overview" id="overview" rows="5" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rating">Rating</label>
+                    </td>
+                    <td>
+                        <input type="number" name="rating" id="rating" value="5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="subscribe" id="subscribe" required>
+                        <label for="subscribe">Subscribe me to the newsletter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text_center" colspan="2">
+                        <input class="w_100" type="submit" value="Send">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

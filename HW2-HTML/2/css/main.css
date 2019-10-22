@@ -1,0 +1,94 @@
+form {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+fieldset {
+  border-color: #84bce0;
+}
+
+input,
+textarea,
+select {
+  padding: 2px 5px;
+}
+
+form h1 {
+  text-align: center;
+}
+
+.pt_15 {
+  padding-top: 15px;
+}
+
+.p_20 {
+  padding: 20px 0;
+}
+
+.ml_100 {
+  margin-left: 100px;
+}
+
+.align_top {
+  vertical-align: top;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.w_100 {
+  width: 100px;
+}
+
+form.login {
+  max-width: 320px;
+}
+
+form.feedback {
+  max-width: 576px;
+}
+
+form.feedback tr td {
+  padding-bottom: 15px;
+}
+
+form.registration tr td {
+  padding-bottom: 5px;
+}
+
+form.feedback tr td:first-child,
+form.registration tr td:first-child {
+  width: 25%;
+}
+
+form.feedback tr td:last-child input[type="text"],
+form.feedback tr td:last-child input[type="email"],
+form.feedback tr td:last-child textarea {
+  width: 75%;
+}
+
+form.registration tr td:last-child input[type="text"],
+form.registration tr td:last-child input[type="email"],
+form.registration tr td:last-child input[type="password"],
+form.registration tr td:last-child input[type="date"],
+form.registration tr td:last-child textarea,
+form.registration tr td:last-child select {
+  width: 65%;
+}
+
+form.registration tr td:last-child input[type="color"] {
+  width: calc(100% - 10px);
+}
+
+form.feedback tr td:last-child input[type="number"] {
+  width: 50px;
+}
+
+form.registration table {
+  max-width: 80%;
+}

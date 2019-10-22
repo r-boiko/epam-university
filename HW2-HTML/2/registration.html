@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2-Html: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="registration">
+    <h1>Registration</h1>
+    <fieldset>
+        <legend>Registration</legend>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    <strong>Common</strong>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="John" required>
+                    <em>* Field is required</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="surname">Surname</label>
+                </td>
+                <td>
+                    <input type="text" name="surname" id="surname" placeholder="Doe" required>
+                    <em>* Field is required</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="gender" id="male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="female" required>
+                        Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date of birth</label>
+                </td>
+                <td>
+                    <input type="date" name="date" id="date" required>
+                    <em>* 01/01/1990</em>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Address</strong>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <select name="country" id="country" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="item 1">item 1</option>
+                        <option value="item 2">item 1</option>
+                        <option value="item 3">item 1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Other</strong>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Favourite color</label>
+                </td>
+                <td>
+                    <input type="color" name="color" id="color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="avatar">Upload avatar</label>
+                </td>
+                <td>
+                    <input type="file" name="avatar" id="avatar" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Security</strong>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Your password" required>
+                    <em>* Field is required</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="repeat_password">Repeat password</label>
+                </td>
+                <td>
+                    <input type="password" name="repeat_password" id="repeat_password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="john_doe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                    <em>* Field is required</em>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="p_20">
+                    <label>
+                        <input type="checkbox" name="terms" id="terms" required>
+                        I agree the Terms and conditions
+                    </label>
+                    <input class="ml_100" type="submit" value="Register">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
