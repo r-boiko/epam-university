@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+.sprite-block__item {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  margin-right: -5px;
+  background-image: url("../img/sprites.png");
+  background-position-y: 84px;
+}
+
+.sprite-block__item--transition {
+  transition: all 1s;
+}
+
+.sprite-block__item:hover {
+  background-position-y: calc(84px * 2);
+}
+
+.sprite-block__item:active {
+  background-position-y: 0;
+}
+
+.sprite-block__item--facebook {
+  background-position-x: 0;
+}
+
+.sprite-block__item--youtube {
+  background-position-x: 84px;
+}
+
+.sprite-block__item--vimeo {
+  background-position-x: calc(84px * 2);
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.colored-text {
+  color: #673ab7;
+}
