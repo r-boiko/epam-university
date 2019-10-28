@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3-Css: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="feedback">
+    <h1>Feedback</h1>
+    <fieldset>
+        <legend>Feedback</legend>
+        <div class="form-content">
+            <div class="form-content__field-wrap">
+                <label class="form-content__label" for="first_name">First name</label>
+                <input class="form-content__field" type="text" name="first_name" id="first_name" required>
+            </div>
+            <div class="form-content__field-wrap">
+                <label class="form-content__label" for="email">Email</label>
+                <input class="form-content__field" type="email" name="email" id="email" placeholder="user@user.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+            </div>
+            <div class="form-content__field-wrap">
+                <label class="form-content__label" for="pros">Pros</label>
+                <input class="form-content__field" type="text" name="pros" id="pros" placeholder="Main pros" required>
+            </div>
+            <div class="form-content__field-wrap">
+                <label class="form-content__label" for="cons">Cons</label>
+                <input class="form-content__field" type="text" name="cons" id="cons" placeholder="Main cons" required>
+            </div>
+            <div class="form-content__field-wrap align_top">
+                <label class="form-content__label" for="overview">Overview</label>
+                <textarea class="form-content__field" name="overview" id="overview" rows="5" required></textarea>
+            </div>
+            <div class="form-content__field-wrap">
+                <label class="form-content__label" for="rating">Rating</label>
+                <input type="number" name="rating" id="rating" value="5" required>
+            </div>
+            <div class="form-content__field-wrap">
+                <label class="form-content__label"></label>
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Subscribe me to the newsletter</label>
+            </div>
+            <div class="form-content__field-wrap text_center">
+                <input class="w_100" type="submit" value="Send">
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

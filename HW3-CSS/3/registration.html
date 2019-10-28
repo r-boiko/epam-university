@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3-Css: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="registration">
+    <h1>Registration</h1>
+    <fieldset>
+        <legend>Registration</legend>
+        <div class="form-content">
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label"><strong>Common</strong></label>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="name">Name</label>
+                <input class="form-content__field" type="text" name="name" id="name" placeholder="John" required>
+                <em>* Field is required</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="surname">Surname</label>
+                <input class="form-content__field" type="text" name="surname" id="surname" placeholder="Doe" required>
+                <em>* Field is required</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label">Gender</label>
+                <label>
+                    <input type="radio" name="gender" id="male" required>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="female" required>
+                    Female
+                </label>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="date">Date of birth</label>
+                <input class="form-content__field" type="date" name="date" id="date" required>
+                <em>* 01/01/1990</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <hr>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label"><strong>Address</strong></label>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="country">Country</label>
+                <select class="form-content__field" name="country" id="country" required>
+                    <option value="" selected disabled>Select</option>
+                    <option value="item 1">item 1</option>
+                    <option value="item 2">item 1</option>
+                    <option value="item 3">item 1</option>
+                </select>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <hr>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label"><strong>Other</strong></label>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="color">Favourite color</label>
+                <input class="form-content__field" type="color" name="color" id="color">
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="avatar">Upload avatar</label>
+                <input type="file" name="avatar" id="avatar" required>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <hr>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label"><strong>Security</strong></label>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="password">Password</label>
+                <input class="form-content__field" type="password" name="password" id="password"
+                       placeholder="Your password" required>
+                <em>* Field is required</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="repeat_password">Repeat password</label>
+                <input class="form-content__field" type="password" name="repeat_password" id="repeat_password" required>
+                <em>* Field is required</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <label class="form-content__label" for="email">Email</label>
+                <input class="form-content__field" type="email" name="email" id="email" placeholder="john_doe@gmail.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+                <em>* Field is required</em>
+            </div>
+            <div class="form-content__field-wrap mb_10">
+                <hr>
+            </div>
+            <div class="form-content__field-wrap mb_0 p_20">
+                <label class="form-content__label"></label>
+                <label>
+                    <input type="checkbox" name="terms" id="terms" required>
+                    I agree the Terms and conditions
+                </label>
+                <input class="ml_100" type="submit" value="Register">
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

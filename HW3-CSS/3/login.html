@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3-Css: Forms</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<form action="/" class="login">
+    <h1>Login</h1>
+    <fieldset>
+        <legend>Authorization</legend>
+        <div class="form-content">
+            <div class="form-content__field-wrap mb_5">
+                <label class="form-content__label" for="login">Login</label>
+                <input class="form-content__field" type="email" name="login" id="login" placeholder="user@user.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+            </div>
+            <div class="form-content__field-wrap mb_0">
+                <label class="form-content__label" for="password">Password</label>
+                <input class="form-content__field" type="password" name="password" id="password" placeholder="password"
+                       required>
+            </div>
+            <div class="form-content__field-wrap text_center pt_15 mb_0">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
