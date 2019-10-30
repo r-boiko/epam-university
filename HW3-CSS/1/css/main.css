@@ -26,22 +26,22 @@ body {
   display: none;
 }
 
-.calendar__day-number .calendar__input:checked + .calendar__label {
-  background-color: blue;
-  color: #fff;
-}
-
 .calendar__day-number .calendar__label {
   display: table-cell;
   width: 40px;
   height: 40px;
   text-align: center;
   vertical-align: middle;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .calendar__day-number .calendar__label:hover {
   background-color: #3f51b5;
+  color: #fff;
+}
+
+.calendar__day-number .calendar__input:checked + .calendar__label {
+  background-color: blue;
   color: #fff;
 }
 
