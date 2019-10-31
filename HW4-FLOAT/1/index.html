@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4-Float: task 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container clearfix">
+        <div class="logo float-left clearfix">
+            <img class="logo__img float-left" src="./img/Logo.png" alt="img">
+            <span class="logo__title">PixelStudio</span>
+        </div>
+        <nav class="menu float-right">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#home">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">My work</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#about-me">About me</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Element</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="container home section section--mb_100 section--mt_160" id="home">
+    <h2 class="section__title">
+        Welcome !
+    </h2>
+    <hr class="section__line">
+    <div class="clearfix">
+        <div class="float-left float-left--width_700">
+            <div class="section__sub-title section__sub-title--mb_20">
+                Welcome to <strong>PixelStudio</strong>
+            </div>
+            <div class="section__text">
+                <p>
+                    From a designer’s perspective, it’s all about downloads. Some fonts are tightly held intellectual
+                    property with very intentionally limited sharing. So, at a minimum, a Typography page must provide
+                    direct download or instructions on how to get approval to obtain them. Most teams provide a
+                    downloadable ZIP that includes all the files you need to install and use fonts locally. Headings are
+                    a critical contributor to page hierarchy. Most systems offer at least four, although some offer many
+                    more. Page titles usually (but not always) align with the largest heading level.
+                </p>
+                <p>
+                    Additionally, some systems offer specialized headers outside the typical heading scale, such as a
+                    picture’s caption or an eyebrow <strong>Morningstar Design System</strong>. Just because a header
+                    exists outside the traditional scale doesn’t mean it’s not a header viably reused across a catalog.
+                </p>
+            </div>
+        </div>
+        <div class="float-right">
+            <div class="slider">
+                <div class="slider__item">
+                    <img class="slider__item-image" src="./img/slider.png" alt="img">
+                    <div class="slider__item-info clearfix">
+                        <span class="title float-left">
+                            Magic grape
+                        </span>
+                        <span class="count float-right">
+                            <strong>1</strong>/3
+                        </span>
+                    </div>
+                </div>
+                <div class="slider__control">
+                    <span class="bg-a_icon_prev"></span>
+                    <span class="bg-a_icon_next"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-items clearfix">
+        <div class="home-items__elem float-left">
+            <div class="home-items__elem-title">
+                <span class="bg-a_icon_presentations"></span> What I do?
+            </div>
+            <div class="home-items__elem-description">
+                A misconception I debunk early and often: developing a typography system for UI components is equivalent
+                to solving.
+            </div>
+        </div>
+        <div class="home-items__elem float-left">
+            <div class="home-items__elem-title">
+                <span class="bg-a_icon_target"></span> Who I do it?
+            </div>
+            <div class="home-items__elem-description">
+                Article typography is made of headings, body text, and a few other components like an captioned image.
+            </div>
+        </div>
+        <div class="home-items__elem float-left">
+            <div class="home-items__elem-title">
+                <span class="bg-a_icon_resume"></span> About me
+            </div>
+            <div class="home-items__elem-description">
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container about-me section section--mb_100" id="about-me">
+    <h2 class="section__title">
+        About me
+    </h2>
+    <hr class="section__line">
+    <div class="clearfix">
+        <div class="float-left float-left--width_700">
+            <div class="section__text">
+                Applying heading scales shouldn’t require use of a specific HTML element. Instead, tease apart the
+                two concerns. A system should weave <a href="">heading</a> levels consistently throughout components
+                and offers
+                tools for adopters to do the same with their custom creations. In particular, line-height is
+                challenging. In some libraries, we’ll use conventions and tools to crop away negative space
+                established by line-height from all text included in components, as described in
+                <a href="">Space in Design Systems</a>. Libraries cropping line height include Morningstar Design
+                System, Discovery Education’s Comet Design System.
+            </div>
+            <div class="quotes">
+                <blockquote class="quotes__blockquote quotes__blockquote--mt_40">
+                    Advantages for the customers: using the same design language for the complex interface, or even
+                    different digital channels, results in product consistency and the reduction of cognitive load for
+                    the users.
+                </blockquote>
+                <blockquote class="quotes__blockquote quotes__blockquote--border_primary">
+                    This is our journey to the the simplest and most beautiful banking design in the world, as we see
+                    it. Light Bank was created by the UXDA team in order to inspire change.
+                </blockquote>
+                <blockquote class="quotes__blockquote quotes__blockquote--border_secondary quotes__blockquote--mb_0">
+                    We encourage you to go one step further beyond average and create the best financial solutions that
+                    your customers are seeking. We hope you can use this UX design case study as a guide to get there.
+                </blockquote>
+            </div>
+            <div class="section__sub-title section__sub-title--mb_20 section__sub-title--mt_42">
+                Heading Levels and Special Cases
+            </div>
+            <div class="section__text clearfix">
+                <span class="special-symbol">S</span> ystems can offer centrally-tuned responsive type sizes across a
+                predictable set of breakpoints. For body
+                text, size increases slowly.
+                <br>
+                As a system gets started with type, dig into details and start some conventions, such as how you’ll cope
+                with line-height. However, avoid finalizing all rules before making the first thing. Instead, be
+                comfortable with chaos early and smooth details as a library takes shape. As you near a major release,
+                lock in conventions and ensure tools are consistently applied.
+            </div>
+            <div class="section__sub-title section__sub-title--mb_20 section__sub-title--mt_42">
+                Text color
+            </div>
+            <div class="section__text clearfix">
+                <ul>
+                    <li>
+                        <strong>Primary</strong>, for most interface text whether body or heading.
+                    </li>
+                    <li>
+                        <strong>Secondary</strong>, for diminished contrast (often, the “gray text”) for supplemental
+                        information.
+                    </li>
+                    <li>
+                        <strong>Interactive</strong>, not just for links but also flat buttons, tab labels, and more.
+                    </li>
+                    <li>
+                        <strong>Disabled</strong>, often resulting is especially lower contrast treatments.
+                    </li>
+                    <li>
+                        <strong>An invitation</strong> to contact a technical architect, since a license for the font is
+                        required. Organizations requires this to control the recurring and often non-trivial cost of
+                        hosting and serving the font.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <aside class="float-right float-right--width_580">
+            <div class="section__sub-title section__sub-title--mb_25">
+                From Flickr
+            </div>
+            <div class="flickr">
+                <div class="clearfix">
+                    <div class="flickr__item float-left flickr__item--mb_49">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-1.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="flickr__item float-left flickr__item--mb_49">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-2.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="flickr__item float-left flickr__item--mb_49">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-3.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="flickr__item float-left">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-1.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="flickr__item float-left">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-2.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="flickr__item float-left">
+                        <a class="flickr__link" href="">
+                            <img class="flickr__image" src="./img/flickr-3.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section__sub-title section__sub-title--mt_50 section__sub-title--mb_25">
+                Links
+            </div>
+            <ul class="links">
+                <li class="links__item">
+                    <a class="links__link" href="">Themeforest</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">GraphicRiver</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">CodeCanyon</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">ActiveDen</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">3DOcean</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">VideoHive</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__link" href="">Audiojungle</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</section>
+<section class="container contact section" id="contact">
+    <h2 class="section__title">
+        Contact
+    </h2>
+    <hr class="section__line">
+    <div class="clearfix">
+        <div class="float-left float-left--width_700">
+            <div class="section__sub-title ">
+                Just say hello!
+            </div>
+            <form action="/" class="form">
+                <div class="clearfix">
+                    <div class="input-wrap float-left">
+                        <label class="input-wrap__label" for="first_name">First name *</label>
+                        <input class="input-wrap__input" type="text" name="first_name" id="first_name" placeholder="John">
+                    </div>
+                    <div class="input-wrap float-right">
+                        <label class="input-wrap__label" for="last_name">Last name *</label>
+                        <input class="input-wrap__input" type="text" name="last_name" id="last_name" placeholder="Johnson">
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="input-wrap float-left">
+                        <label class="input-wrap__label" for="email">Email *</label>
+                        <input class="input-wrap__input" type="email" name="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="input-wrap float-right">
+                        <label class="input-wrap__label" for="phone">Phone *</label>
+                        <input class="input-wrap__input" type="tel" name="phone" id="phone" placeholder="+ 000 123 456 789">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <label class="input-wrap__label input-wrap__label--mb_20" for="male">Choose option:</label>
+                    <div class="radio-wrap">
+                        <input class="input-wrap__input-radio" type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input class="input-wrap__input-radio" type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-wrap">
+                        <input class="input-wrap__input-radio" type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <textarea class="input-wrap__textarea" placeholder="Message"></textarea>
+                </div>
+                <div class="input-wrap">
+                    <div class="checkbox-wrap">
+                        <input class="input-wrap__input-checkbox" type="checkbox" name="terms" id="terms">
+                        <label for="terms">Terms &#38; Conditions</label>
+                    </div>
+                </div>
+                <div class="input-wrap input-wrap--mb_60">
+                    <input class="input-wrap__submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="float-right float-right--width_580">
+            <div class="section__sub-title section__sub-title--mb_20">
+                Contact information
+            </div>
+            <div class="section__text">
+                Feel free to contact us for any of your questions, we’ll get back to you as soon as possible
+            </div>
+            <div class="contact-info">
+                <div class="contact-info__item contact-info__item--icon_house">
+                    Company name <span class="caret">|</span> 798 Street name <span class="caret">|</span> 999 00 City
+                    name
+                </div>
+                <div class="contact-info__item contact-info__item--icon_phone">
+                    Phone: +000 987 654 321
+                </div>
+                <div class="contact-info__item contact-info__item--icon_email">
+                    Email:<a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="float-left float-left--width_340">
+            <div class="section__sub-title section__sub-title--mb_20 section__sub-title--color_red">
+                PixelStudio
+            </div>
+            <div class="section__text">
+                A true business companion a true business companion a true business companion A true business companion
+                a true business companion a true business companion
+            </div>
+            <div class="socials">
+                <div class="footer__title footer__title--mt_30 footer__title--mb_15">
+                    SOCIAL
+                </div>
+                <div class="clearfix">
+                    <a href="" class="float-left socials__link  socials__link--icon_youtube"></a>
+                    <a href="" class="float-left socials__link  socials__link--icon_linkedIn"></a>
+                    <a href="" class="float-left socials__link  socials__link--icon_twitter"></a>
+                    <a href="" class="float-left socials__link  socials__link--icon_facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="float-right float-right--width_940 clearfix">
+            <div class="float-left">
+                <div class="footer__title footer__title--pt_10 footer__title--mr_153">
+                    FEATURES
+                </div>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Engagement
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Retention
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Funnels
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="float-left">
+                <div class="footer__title footer__title--pt_10 footer__title--mr_138">
+                    RESOURCES
+                </div>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Enterprice
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            SaaS
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Financial services
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Consumer Tech
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="float-left">
+                <div class="footer__title footer__title--pt_10 footer__title--mr_185">
+                    MENU
+                </div>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            My work
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            About me
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Element
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="float-left">
+                <div class="footer__title footer__title--pt_10">
+                    INFORMATION
+                </div>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            About us
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Terms &#38; Conditions
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            User’s guide
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Support center
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">
+                            Press info
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
