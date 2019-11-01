@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="255px" height="45px" viewBox="0 0 255 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>E8AF59AC-7033-42C2-8D61-4238D21E0024</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-90.000000, -145.000000)" id="Card/Music/Song/Playing">
+            <g transform="translate(14.000000, 14.000000)">
+                <g>
+                    <g id="Card">
+                        <g id="EQ" transform="translate(76.000000, 131.000000)">
+                            <g id="Inactive" transform="translate(110.000000, 0.000000)" fill="#9B9B9B">
+                                <g id="EQ/Bar/Inactive" transform="translate(110.000000, 12.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="33" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(100.000000, 28.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="17" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(90.000000, 35.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="10" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(80.000000, 20.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="25" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(70.000000, 28.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="17" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(60.000000, 6.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="39" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(50.000000, 0.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="45" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(40.000000, 6.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="39" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(30.000000, 10.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="35" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(20.000000, 20.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="25" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(10.000000, 10.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="35" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(0.000000, 16.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="29" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(120.000000, 0.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="45" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(130.000000, 9.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="36" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Inactive" transform="translate(140.000000, 26.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="19" rx="2.5"></rect>
+                                </g>
+                            </g>
+                            <g id="Active" fill="#D0021B">
+                                <g id="EQ/Bar/Active" transform="translate(30.000000, 8.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="37" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(40.000000, 18.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="27" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(50.000000, 21.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="24" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(60.000000, 16.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="29" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(70.000000, 23.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="22" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(80.000000, 11.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="34" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(90.000000, 21.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="24" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(100.000000, 32.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="13" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(20.000000, 0.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="45" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(10.000000, 15.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="30" rx="2.5"></rect>
+                                </g>
+                                <g id="EQ/Bar/Active" transform="translate(0.000000, 23.000000)">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="22" rx="2.5"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

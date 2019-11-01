@@ -1,6 +1,46 @@
+/* fonts */
+
+@font-face {
+  font-family: "Helvetica-Regular";
+  src: url("../fonts/Helvetica-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "LucidaGrande-Regular";
+  src: url("../fonts/LucidaGrande-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "LSFProText";
+  src: url("../fonts/SFProText-Light.ttf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "LSFProText";
+  src: url("../fonts/SFProText-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "LSFProText";
+  src: url("../fonts/SFProText-Semibold.ttf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "LSFProText";
+  src: url("../fonts/SFProText-Bold.ttf") format("opentype");
+  font-weight: 700;
+}
+
+/* fonts - end */
+
 body {
-  margin: 0;
-  font-family: sans-serif;
+  font-family: "Helvetica-Regular", sans-serif;
+  margin: 15px 0;
 }
 
 .container {
@@ -16,4 +56,237 @@ body {
 
 .float-left {
   float: left;
+}
+
+.float-left--ml_mr {
+  margin: 0 15px;
+}
+
+.float-right {
+  float: right;
+}
+
+.card {
+  padding: 15px 15px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card--ml_15 {
+  margin-left: 15px;
+}
+
+.card--mt_16 {
+  margin-top: 16px;
+}
+
+.card--mb_16 {
+  margin-bottom: 16px;
+}
+
+.card--mb_20 {
+  margin-bottom: 20px;
+}
+
+.card--w_135 {
+  width: 135px;
+}
+
+.card--as_title {
+  box-shadow: none;
+  background: transparent;
+  text-align: center;
+  font-family: "LSFProText", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.75px;
+  padding: 15px 25px;
+}
+
+.card__title {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  color: #000;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.card__title--font_secondary {
+  font-family: "LSFProText", sans-serif;
+  font-weight: 300;
+}
+
+.card__title--absolute {
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+}
+
+.card__title--w_auto {
+  width: auto;
+}
+
+.card__title--secondary {
+  color: #d0021b;
+}
+
+.card__title--mt_5 {
+  margin-top: 5px;
+}
+
+.card__title--h_50 {
+  height: 50px;
+}
+
+.card__title--mb_34 {
+  margin-bottom: 34px;
+}
+
+.card__sub-title {
+  text-decoration: none;
+  display: block;
+  color: #bebebe;
+  font-size: 14px;
+  letter-spacing: -0.15px;
+  line-height: 19px;
+  margin-top: 5px;
+}
+
+.card__title:hover,
+.card__sub-title:hover {
+  text-decoration: underline;
+}
+
+.card__preview {
+  transition: opacity 300ms;
+}
+
+.card__preview:hover {
+  opacity: 0.9;
+}
+
+.card__preview--ml_45 {
+  margin-left: 45px;
+}
+
+.card__preview--ml_15 {
+  margin-left: 15px;
+}
+
+.card__preview-link {
+  position: relative;
+  display: inline-block;
+}
+
+.card__preview-img {
+  border-radius: 4px;
+}
+
+.card__player {
+  margin-top: 11px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.icon:hover {
+  transform: rotate(180deg);
+}
+
+.icon--mr_11 {
+  margin-right: 11px;
+}
+
+.colored-block {
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background: linear-gradient(to right, #bd5663, #9a323f);
+  transition: transform 300ms;
+}
+
+.colored-block:hover {
+  transform: scale(1.1);
+}
+
+.colored-block--color_primary {
+  background: linear-gradient(to right, #3fadb8, #6cc6b6);
+}
+
+.colored-block--color_secondary {
+  background: #f9ab16;
+}
+
+.colored-block--color_gray {
+  background: #e0e0e0;
+}
+
+.colored-block--color_light {
+  background: #fadfc0;
+}
+
+.colored-block--rotate_2 {
+  transform: rotate(2deg);
+}
+
+.colored-block--rotate_3 {
+  transform: rotate(-3deg);
+}
+
+.colored-block--ml_45 {
+  margin-left: 45px;
+}
+
+.colored-block--w_h_45 {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.colored-block--cube {
+  width: 130px;
+  height: 130px;
+  padding: 0;
+}
+
+.card__duration {
+  margin-top: 17px;
+}
+
+.card__duration-time {
+  color: #bebebe;
+  font-size: 14px;
+  letter-spacing: -0.15px;
+  line-height: 19px;
+  margin: 15px 0 0 15px;
+}
+
+.card__hyperlink {
+  color: #000;
+  font-family: "LSFProText", sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.marked_text {
+  color: #bebebe;
 }
