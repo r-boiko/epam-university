@@ -73,19 +73,91 @@ body {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-.card--ml_15 {
+.card--shadow_1 {
+  position: relative;
+}
+
+.card--shadow_1::after {
+  content: "";
+  width: 15%;
+  height: 10%;
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+
+.card--shadow_1::before {
+  content: "";
+  width: 15%;
+  height: 10%;
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+.card--shadow_2 {
+  position: relative;
+}
+
+.card--shadow_2::after {
+  content: "";
+  width: 50%;
+  height: 10%;
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.card--shadow_2::before {
+  content: "";
+  width: 50%;
+  height: 10%;
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  transform: rotate(5deg);
+  z-index: -1;
+}
+
+.card--shadow_3 {
+  position: relative;
+}
+
+.card--shadow_3::after {
+  content: "";
+  width: 50%;
+  height: 10%;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  z-index: -1;
+}
+
+.ml-15 {
   margin-left: 15px;
 }
 
-.card--mt_16 {
+.mt-16 {
   margin-top: 16px;
 }
 
-.card--mb_16 {
+.mb-16 {
   margin-bottom: 16px;
 }
 
-.card--mb_20 {
+.mb-20 {
   margin-bottom: 20px;
 }
 
@@ -139,7 +211,7 @@ body {
   color: #d0021b;
 }
 
-.card__title--mt_5 {
+.mt-5 {
   margin-top: 5px;
 }
 
@@ -147,7 +219,7 @@ body {
   height: 50px;
 }
 
-.card__title--mb_34 {
+.mb-34 {
   margin-bottom: 34px;
 }
 
@@ -174,12 +246,8 @@ body {
   opacity: 0.9;
 }
 
-.card__preview--ml_45 {
+.ml-45 {
   margin-left: 45px;
-}
-
-.card__preview--ml_15 {
-  margin-left: 15px;
 }
 
 .card__preview-link {
@@ -204,8 +272,16 @@ body {
   transform: rotate(180deg);
 }
 
-.icon--mr_11 {
+.icon--rotate_125:hover {
+  transform: rotate(125deg);
+}
+
+.mr-11 {
   margin-right: 11px;
+}
+
+.p-15 {
+  padding: 15px;
 }
 
 .colored-block {
@@ -247,10 +323,6 @@ body {
 
 .colored-block--rotate_3 {
   transform: rotate(-3deg);
-}
-
-.colored-block--ml_45 {
-  margin-left: 45px;
 }
 
 .colored-block--w_h_45 {
