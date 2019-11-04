@@ -189,7 +189,7 @@ ul li {
 
 .checkbox__input:checked + .checkbox__label::before,
 .checkbox__input + .checkbox__label--checked::before {
-  left: calc(100% - 16px);
+  left: calc(100% - 15px);
 }
 
 .checkbox__input:checked + .checkbox__label {
