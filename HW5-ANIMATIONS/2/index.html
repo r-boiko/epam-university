@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW5-Animations: task 2</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="menu">
+    <input class="menu__btn-input" type="checkbox" id="menu">
+    <label class="menu__btn-label" for="menu"></label>
+    <nav class="menu__nav">
+        <ul>
+            <li>
+                <div class="menu__item">
+                    <input class="menu__item-input" type="radio" name="menu" id="menu_1">
+                    <label class="menu__item-label" for="menu_1">Checkbox</label>
+                    <div class="menu__item-content">
+                        <div class="checkbox">
+                            <div class="checkbox__title">
+                                Custom checkbox
+                            </div>
+                            <input class="checkbox__input" type="checkbox" id="checkbox_1">
+                            <label class="checkbox__label" for="checkbox_1"></label>
+                        </div>
+                        <div class="checkbox">
+                            <div class="checkbox__title">
+                                Custom checkbox (disabled)
+                            </div>
+                            <input class="checkbox__input" type="checkbox" id="checkbox_2">
+                            <label class="checkbox__label checkbox__label--disabled" for="checkbox_2"></label>
+                        </div>
+                        <div class="checkbox">
+                            <div class="checkbox__title">
+                                Custom checkbox (disabled and checked)
+                            </div>
+                            <input class="checkbox__input" type="checkbox" id="checkbox_3">
+                            <label class="checkbox__label checkbox__label--disabled checkbox__label--checked" for="checkbox_3"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu__item">
+                    <input class="menu__item-input" type="radio" name="menu" id="menu_2">
+                    <label class="menu__item-label" for="menu_2">Accordion</label>
+                    <div class="menu__item-content menu__item-content--align_center">
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                Accordion
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="checkbox" id="acc_1">
+                                <label class="accordion__group-label" for="acc_1">Acc 1</label>
+                                <div class="accordion__group-content">Acc 1 content</div>
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="checkbox" id="acc_2">
+                                <label class="accordion__group-label" for="acc_2">Acc 2</label>
+                                <div class="accordion__group-content">Acc 2 content</div>
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="checkbox" id="acc_3">
+                                <label class="accordion__group-label" for="acc_3">Acc 3</label>
+                                <div class="accordion__group-content">Acc 3 content</div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                Accordion (collapsible)
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="radio" id="acc_4" name="accordion_collapsible">
+                                <label class="accordion__group-label" for="acc_4">Acc 4</label>
+                                <div class="accordion__group-content accordion__group-content--size_big">Acc 4 content</div>
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="radio" id="acc_5" name="accordion_collapsible">
+                                <label class="accordion__group-label" for="acc_5">Acc 5</label>
+                                <div class="accordion__group-content">Acc 5 content</div>
+                            </div>
+                            <div class="accordion__group">
+                                <input class="accordion__group-input" type="radio" id="acc_6" name="accordion_collapsible">
+                                <label class="accordion__group-label" for="acc_6">Acc 6</label>
+                                <div class="accordion__group-content">Acc 6 content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu__item menu__item----dropdown">
+                    <input class="menu__item-input" type="radio" name="menu" id="menu_3">
+                    <label class="menu__item-label" for="menu_3">+ Drop-Down</label>
+                    <div class="menu__item-content">
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu__item">
+                                <a class="dropdown-menu__link" href="">Checkbox</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a class="dropdown-menu__link" href="">Accordion</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a class="dropdown-menu__link" href="">Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
