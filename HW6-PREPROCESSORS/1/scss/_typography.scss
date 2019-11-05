@@ -1,0 +1,33 @@
+@import "vars";
+@import "extends";
+@import "mixins";
+
+h1 {
+  @extend %heading;
+
+  @include heading-properties(bold, 46px, 54px);
+}
+
+h2 {
+  @extend %heading;
+
+  @include heading-properties(normal, 36px, 42px);
+}
+
+h3 {
+  @extend %heading;
+
+  @include heading-properties(bold, 30px, 35px);
+}
+
+h4 {
+  @extend %heading;
+
+  @include heading-properties(normal, 20px, 24px);
+}
+
+h5 {
+  @extend %heading;
+
+  @include heading-properties(normal, 18px, 21px);
+}
