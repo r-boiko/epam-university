@@ -1,0 +1,26 @@
+$col-width: 100px;
+$col-offset: 20px;
+$col-count: 12;
+
+.container {
+  width: ($col-width * $col-count) + ($col-offset * $col-count) - $col-offset;
+  margin: 0 auto;
+}
+
+.row {
+  margin-right: -20px;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@for $i from 1 through $col-count {
+  .col-#{$i} {
+    width: ($col-width * $i) + ($col-offset * $i);
+    padding-right: $col-offset;
+    float: left;
+  }
+}

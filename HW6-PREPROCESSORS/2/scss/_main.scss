@@ -1,0 +1,88 @@
+@import "reset";
+@import "typography";
+@import "mixins";
+@import "extends";
+@import "vars";
+@import "color-matrix";
+
+// ui kit
+
+.disabled {
+  @extend %item-disabled;
+}
+
+// buttons
+.button {
+  @extend %button;
+
+  &.primary {
+    @include button-colors($blue, $deep-blue, $dark-blue);
+  }
+
+  &.secondary {
+    @include button-colors($orange, $deep-orange, $dark-orange);
+  }
+
+  &.success {
+    @include button-colors($green, $deep-green, $dark-green);
+  }
+
+  &.danger {
+    @include button-colors($red, $deep-red, $dark-red);
+  }
+
+  &.warning {
+    @include button-colors($yellow, $deep-yellow, $dark-yellow);
+  }
+
+  &.info {
+    @include button-colors($turquoise, $deep-turquoise, $dark-turquoise);
+  }
+}
+
+// tabs
+.tabs__item {
+  @extend %tab-item;
+
+  @include tab-item-effects(tabs__item-input, tabs__item-label, $scorpion, $tab-active-color);
+
+  &--filled {
+    @extend %tab-item-filled;
+
+    @include tab-item-filled-effects(tabs__item-input, tabs__item-label, $white, $tab-active-color2);
+  }
+}
+
+// check boxes
+
+.checkbox-field {
+  @extend %checkbox-field;
+
+  @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
+
+  &--success {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
+  }
+
+  &--secondary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $tan-hide);
+  }
+
+  &--primary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $dodger-blue);
+  }
+
+  &--danger {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $carnation);
+  }
+
+  &--info {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $mine-shaft);
+  }
+}
+
+// pagination
+
+.pagination__item {
+  @extend %pagination-item;
+}

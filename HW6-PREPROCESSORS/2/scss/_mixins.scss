@@ -1,0 +1,86 @@
+// etc
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  box-shadow: $property;
+}
+
+// headings
+
+@mixin heading-properties($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// buttons
+
+@mixin button-colors($default-color, $hover-color, $active-color) {
+  background-color: $default-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+}
+
+// tab items
+
+@mixin tab-item-effects($input, $label, $text-color, $line-color) {
+  .#{$input}:checked + .#{$label} {
+    color: $text-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $line-color;
+    }
+  }
+
+  .#{$label}:hover {
+    color: $text-color;
+  }
+}
+
+@mixin tab-item-filled-effects($input, $label, $text-color, $background-color) {
+  .#{$input}:checked + .#{$label} {
+    color: $text-color;
+    background-color: $background-color;
+    border-color: $background-color;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .#{$label}:hover {
+    color: $text-color;
+    background-color: $background-color;
+    border-color: $background-color;
+  }
+}
+
+// check boxes
+
+@mixin checkbox-field-effects($input, $label, $background-color) {
+  .#{$input}:checked + .#{$label} {
+    border-color: $background-color;
+    background-color: $background-color;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  .#{$label}:hover {
+    opacity: 0.5;
+  }
+}

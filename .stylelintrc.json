@@ -5,5 +5,10 @@
       "ignoreAtRules": ["extend", "at-root", "debug", "warn", "error", "if", "else", "for", "each", "while", "mixin", "include", "content", "return", "function"]
     }]
   },
-  "ignoreFiles": "HW6-PREPROCESSORS/1/css/main.css"
+  "ignoreFiles": [
+    "HW6-PREPROCESSORS/1/css/main.css",
+    "HW6-PREPROCESSORS/2/css/theme1.css",
+    "HW6-PREPROCESSORS/2/css/theme2.css",
+    "HW6-PREPROCESSORS/2/css/theme3.css"
+  ]
 }
