@@ -1,4 +1,393 @@
+@import "reset";
+@import "typography";
+@import "mixins";
+@import "extends";
 @import "variables3";
 @import "color-matrix3";
 @import "grid";
-@import "main";
+
+// ui kit
+
+.disabled {
+  @extend %item-disabled;
+}
+
+// buttons
+.button {
+  @extend %button;
+
+  &.primary {
+    @include button-colors($primary-default, $primary-hover, $primary-active);
+  }
+
+  &.secondary {
+    @include button-colors($secondary-default, $secondary-hover, $secondary-active);
+  }
+
+  &.success {
+    @include button-colors($success-default, $success-hover, $success-active);
+  }
+
+  &.danger {
+    @include button-colors($danger-default, $danger-hover, $danger-active);
+  }
+
+  &.warning {
+    @include button-colors($warning-default, $warning-hover, $warning-active);
+  }
+
+  &.info {
+    @include button-colors($info-default, $info-hover, $info-active);
+  }
+}
+
+// tabs
+.tabs__item {
+  @extend %tab-item;
+
+  @include tab-item-effects(tabs__item-input, tabs__item-label, $scorpion, $tab-active-color);
+
+  &--filled {
+    @extend %tab-item-filled;
+
+    @include tab-item-filled-effects(tabs__item-input, tabs__item-label, $white, $tab-active-color2);
+  }
+}
+
+// check boxes
+
+.checkbox-field {
+  @extend %checkbox-field;
+
+  @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
+
+  &--success {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-success);
+  }
+
+  &--secondary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-secondary);
+  }
+
+  &--primary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-primary);
+  }
+
+  &--danger {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-danger);
+  }
+
+  &--info {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-info);
+  }
+}
+
+// pagination
+
+.pagination__item {
+  @extend %pagination-item;
+
+  a.active {
+    color: $text-active;
+    background-color: $pagination-active-color;
+  }
+}
+
+html,
+body {
+  width: 1920px;
+  font-family: $font-stack;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.mt-8 {
+  margin-top: -8px;
+}
+
+.mt_60 {
+  margin-top: 60px;
+}
+
+.m_23 {
+  margin: 0 23px;
+}
+
+.mb_28 {
+  margin-bottom: 28px;
+}
+
+.mb_11 {
+  margin-bottom: 11px;
+}
+
+.header {
+  padding: 30px 0;
+  height: 600px;
+  background-image: url($main-banner);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__logo {
+    color: $white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+  }
+
+  &__menu {
+    &-item {
+      display: inline-block;
+    }
+
+    &-link {
+      font-family: $font-stack;
+      position: relative;
+      text-decoration: none;
+      color: $white;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 49px;
+      margin-left: 39px;
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: -2.5px;
+          width: calc(100% + 5px);
+          height: 2px;
+          background: $white;
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: $white;
+    margin-top: 395px;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+  }
+
+  &__sub-title {
+    color: $white;
+    margin-left: 5px;
+  }
+}
+
+.tabs-wrapper {
+  padding: 24px 0;
+  background-color: $tabs-wrapper;
+}
+
+.typography {
+  margin-top: 55px;
+
+  &__block {
+    max-width: 940px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 17px;
+    }
+
+    p {
+      color: $scorpion;
+      font-family: $font-stack;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.rooms {
+  &__title {
+    margin: 68px 0 30px;
+
+    &--second {
+      margin-top: 50px;
+    }
+  }
+
+  &__item {
+    height: 400px;
+    border-radius: 8px;
+    background-color: $white;
+    box-shadow: 0 1px 8px 0 rgba(206, 206, 206, 0.5);
+
+    &-preview {
+      height: 248px;
+      background-image: url("../img/room-img-1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &--img_2 {
+        background-image: url("../img/room-img-2.png");
+      }
+
+      &--img_3 {
+        background-image: url("../img/room-img-3.png");
+      }
+
+      &--img_4 {
+        background-image: url("../img/room-img-4.png");
+      }
+
+      &--img_5 {
+        background-image: url("../img/room-img-5.png");
+      }
+
+      &--img_6 {
+        background-image: url("../img/room-img-6.png");
+      }
+    }
+
+    &-detail {
+      padding: 20px;
+
+      .title {
+        margin: 0 0 46px;
+      }
+
+      .price {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.review-rates {
+  &__sub-title {
+    margin: 0 0 25px;
+  }
+
+  &__checkboxes {
+    .checkbox-field {
+      margin-right: 50px;
+
+      &__text {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+        position: relative;
+        top: -5px;
+      }
+
+      &--info {
+        .checkbox-field__text {
+          color: $mine-shaft;
+        }
+      }
+
+      &--danger {
+        .checkbox-field__text {
+          color: $carnation;
+        }
+      }
+
+      &--primary {
+        .checkbox-field__text {
+          color: $dodger-blue;
+        }
+      }
+
+      &--secondary {
+        .checkbox-field__text {
+          color: $tan-hide;
+        }
+      }
+
+      &--success {
+        .checkbox-field__text {
+          color: $emerald;
+        }
+      }
+    }
+  }
+
+  &__comments {
+    width: 940px;
+    margin-top: 38px;
+
+    .comment {
+      padding: 30px;
+      border-radius: 8px;
+      color: $scorpion;
+      background-color: $comment-bg;
+      font-size: 20px;
+      line-height: 30px;
+
+      .comment-mark {
+        color: $comment-mark;
+        font-weight: bold;
+
+        &::before {
+          content: "|";
+          display: inline-block;
+          margin-right: 30px;
+          font-weight: normal;
+          color: $scorpion;
+        }
+      }
+
+      &__body {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 172px;
+
+  &__title {
+    font-weight: bold;
+    margin: 0 0 30px;
+  }
+
+  &__menu {
+    &-item {
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $scorpion;
+      font-size: 18px;
+      line-height: 21px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

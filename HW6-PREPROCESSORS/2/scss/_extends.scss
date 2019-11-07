@@ -1,6 +1,4 @@
 @import "vars";
-@import "color-matrix";
-@import "color-matrix1";
 @import "mixins";
 
 // headings
@@ -23,7 +21,7 @@
 
   @include box-shadow(0 2px 2px 0 rgba(155, 155, 155, 0.5));
 
-  color: $button-text;
+  color: $white;
   font-family: $font-stack;
   font-size: 18px;
   font-weight: 500;
@@ -152,11 +150,6 @@
 
     &:hover {
       background-color: $alto;
-    }
-
-    &.active {
-      color: $text-active;
-      background-color: $pagination-active-color;
     }
   }
 }

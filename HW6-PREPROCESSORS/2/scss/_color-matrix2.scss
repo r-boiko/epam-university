@@ -2,12 +2,12 @@
 @import "variables2";
 
 // buttons
-$primary-default: $blue;
-$primary-hover: $dark-blue;
-$primary-active: $dark-blue;
-$secondary-default: $orange;
-$secondary-hover: $deep-orange;
-$secondary-active: $dark-orange;
+$primary-default: $orange;
+$primary-hover: $deep-orange;
+$primary-active: $dark-orange;
+$secondary-default: $blue;
+$secondary-hover: $deep-blue;
+$secondary-active: $dark-blue;
 $success-default: $green;
 $success-hover: $deep-green;
 $success-active: $dark-green;
@@ -35,7 +35,7 @@ $tab-active-color2: $carnation;
 $tabs-wrapper: $semi-white;
 
 // pagination
-$pagination-active-color: $dodger-blue;
+$pagination-active-color: $orange;
 
 // texts
 $text-primary: $scorpion;
@@ -44,4 +44,4 @@ $text-active: $white;
 
 // comments
 $comment-bg: $semi-white;
-$comment-mark: $dodger-blue;
+$comment-mark: $orange;

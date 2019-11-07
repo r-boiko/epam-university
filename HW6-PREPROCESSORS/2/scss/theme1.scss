@@ -1,7 +1,97 @@
+@import "reset";
+@import "typography";
+@import "mixins";
+@import "extends";
 @import "variables1";
 @import "color-matrix1";
 @import "grid";
-@import "main";
+
+// ui kit
+
+.disabled {
+  @extend %item-disabled;
+}
+
+// buttons
+.button {
+  @extend %button;
+
+  &.primary {
+    @include button-colors($primary-default, $primary-hover, $primary-active);
+  }
+
+  &.secondary {
+    @include button-colors($secondary-default, $secondary-hover, $secondary-active);
+  }
+
+  &.success {
+    @include button-colors($success-default, $success-hover, $success-active);
+  }
+
+  &.danger {
+    @include button-colors($danger-default, $danger-hover, $danger-active);
+  }
+
+  &.warning {
+    @include button-colors($warning-default, $warning-hover, $warning-active);
+  }
+
+  &.info {
+    @include button-colors($info-default, $info-hover, $info-active);
+  }
+}
+
+// tabs
+.tabs__item {
+  @extend %tab-item;
+
+  @include tab-item-effects(tabs__item-input, tabs__item-label, $scorpion, $tab-active-color);
+
+  &--filled {
+    @extend %tab-item-filled;
+
+    @include tab-item-filled-effects(tabs__item-input, tabs__item-label, $white, $tab-active-color2);
+  }
+}
+
+// check boxes
+
+.checkbox-field {
+  @extend %checkbox-field;
+
+  @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
+
+  &--success {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-success);
+  }
+
+  &--secondary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-secondary);
+  }
+
+  &--primary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-primary);
+  }
+
+  &--danger {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-danger);
+  }
+
+  &--info {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-info);
+  }
+}
+
+// pagination
+
+.pagination__item {
+  @extend %pagination-item;
+
+  a.active {
+    color: $text-active;
+    background-color: $pagination-active-color;
+  }
+}
 
 html,
 body {
@@ -56,7 +146,7 @@ body {
 .header {
   padding: 30px 0;
   height: 600px;
-  background-image: url("../img/banner-1.png");
+  background-image: url($main-banner);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
