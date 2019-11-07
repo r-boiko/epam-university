@@ -61,23 +61,23 @@
   @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
 
   &--success {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-success);
   }
 
   &--secondary {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $tan-hide);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-secondary);
   }
 
   &--primary {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $dodger-blue);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-primary);
   }
 
   &--danger {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $carnation);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-danger);
   }
 
   &--info {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $mine-shaft);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-info);
   }
 }
 

@@ -1,5 +1,6 @@
 @import "vars";
 
+// buttons
 $primary-default: $blue;
 $primary-hover: $dark-blue;
 $primary-active: $dark-blue;
@@ -19,9 +20,22 @@ $info-default: $turquoise;
 $info-hover: $deep-turquoise;
 $info-active: $dark-turquoise;
 $button-text: $white;
+
+// checkboxes
+$checkbox-success: $emerald;
+$checkbox-secondary: $tan-hide;
+$checkbox-primary: $dodger-blue;
+$checkbox-danger: $carnation;
+$checkbox-info: $mine-shaft;
+
+// tabs
 $tab-active-color: $emerald;
 $tab-active-color2: $carnation;
+
+// pagination
 $pagination-active-color: $emerald;
+
+// texts
 $text-primary: $scorpion;
 $text-secondary: $silver-chalice;
 $text-active: $white;

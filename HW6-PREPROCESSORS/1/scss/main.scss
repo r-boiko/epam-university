@@ -28,27 +28,27 @@
   @extend %button;
 
   &.primary {
-    @include button-colors($blue, $deep-blue, $dark-blue);
+    @include button-colors($primary-default, $primary-hover, $primary-active);
   }
 
   &.secondary {
-    @include button-colors($orange, $deep-orange, $dark-orange);
+    @include button-colors($secondary-default, $secondary-hover, $secondary-active);
   }
 
   &.success {
-    @include button-colors($green, $deep-green, $dark-green);
+    @include button-colors($success-default, $success-hover, $success-active);
   }
 
   &.danger {
-    @include button-colors($red, $deep-red, $dark-red);
+    @include button-colors($danger-default, $danger-hover, $danger-active);
   }
 
   &.warning {
-    @include button-colors($yellow, $deep-yellow, $dark-yellow);
+    @include button-colors($warning-default, $warning-hover, $warning-active);
   }
 
   &.info {
-    @include button-colors($turquoise, $deep-turquoise, $dark-turquoise);
+    @include button-colors($info-default, $info-hover, $info-active);
   }
 }
 
@@ -72,8 +72,24 @@
 
   @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $emerald);
 
+  &--success {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-success);
+  }
+
+  &--secondary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-secondary);
+  }
+
+  &--primary {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-primary);
+  }
+
   &--danger {
-    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $carnation);
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-danger);
+  }
+
+  &--info {
+    @include checkbox-field-effects(checkbox-field__input, checkbox-field__label, $checkbox-info);
   }
 }
 

@@ -3,17 +3,21 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-body, p {
+body,
+p {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,7 +44,7 @@ h5, h4, h3, h2, h1 {
   -webkit-box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
   -moz-box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
   box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
-  color: #ffffff;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -106,7 +110,7 @@ h5, h4, h3, h2, h1 {
   background-color: #f2f2f2;
   transition: border-color 300ms, opacity 300ms;
 }
-.checkbox-field label:after {
+.checkbox-field label::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -149,7 +153,7 @@ h5, h4, h3, h2, h1 {
   background-color: #e0e0e0;
 }
 .pagination__item a.active {
-  color: #ffffff;
+  color: #fff;
   background-color: #52be80;
 }
 
@@ -199,7 +203,7 @@ h1, h2, h3, h4, h5 {
   -webkit-box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
   -moz-box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
   box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
-  color: #ffffff;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -265,7 +269,7 @@ h1, h2, h3, h4, h5 {
   background-color: #f2f2f2;
   transition: border-color 300ms, opacity 300ms;
 }
-.checkbox-field label:after {
+.checkbox-field label::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -308,7 +312,7 @@ h1, h2, h3, h4, h5 {
   background-color: #e0e0e0;
 }
 .pagination__item a.active {
-  color: #ffffff;
+  color: #fff;
   background-color: #52be80;
 }
 
@@ -329,7 +333,7 @@ h1, h2, h3, h4, h5 {
   background-color: #4e92ff;
 }
 .button.primary:hover {
-  background-color: #447fde;
+  background-color: #3b6fc2;
 }
 .button.primary:active {
   background-color: #3b6fc2;
@@ -353,7 +357,7 @@ h1, h2, h3, h4, h5 {
   background-color: #3da235;
 }
 .button.danger {
-  background-color: #F05B5B;
+  background-color: #f05b5b;
 }
 .button.danger:hover {
   background-color: #bf4141;
@@ -371,7 +375,7 @@ h1, h2, h3, h4, h5 {
   background-color: #d6a917;
 }
 .button.info {
-  background-color: #0Fbdb4;
+  background-color: #0fbdb4;
 }
 .button.info:hover {
   background-color: #0ca099;
@@ -383,7 +387,7 @@ h1, h2, h3, h4, h5 {
 .tabs__item .tabs__item-input:checked + .tabs__item-label {
   color: #5d5d5d;
 }
-.tabs__item .tabs__item-input:checked + .tabs__item-label:after {
+.tabs__item .tabs__item-input:checked + .tabs__item-label::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -396,15 +400,15 @@ h1, h2, h3, h4, h5 {
   color: #5d5d5d;
 }
 .tabs__item--filled .tabs__item-input:checked + .tabs__item-label {
-  color: #ffffff;
+  color: #fff;
   background-color: #f05b5b;
   border-color: #f05b5b;
 }
-.tabs__item--filled .tabs__item-input:checked + .tabs__item-label:after {
+.tabs__item--filled .tabs__item-input:checked + .tabs__item-label::after {
   content: none;
 }
 .tabs__item--filled .tabs__item-label:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #f05b5b;
   border-color: #f05b5b;
 }
@@ -413,20 +417,60 @@ h1, h2, h3, h4, h5 {
   border-color: #52be80;
   background-color: #52be80;
 }
-.checkbox-field .checkbox-field__input:checked + .checkbox-field__label:after {
+.checkbox-field .checkbox-field__input:checked + .checkbox-field__label::after {
   opacity: 1;
 }
 .checkbox-field .checkbox-field__label:hover {
+  opacity: 0.5;
+}
+.checkbox-field--success .checkbox-field__input:checked + .checkbox-field__label {
+  border-color: #52be80;
+  background-color: #52be80;
+}
+.checkbox-field--success .checkbox-field__input:checked + .checkbox-field__label::after {
+  opacity: 1;
+}
+.checkbox-field--success .checkbox-field__label:hover {
+  opacity: 0.5;
+}
+.checkbox-field--secondary .checkbox-field__input:checked + .checkbox-field__label {
+  border-color: #f89052;
+  background-color: #f89052;
+}
+.checkbox-field--secondary .checkbox-field__input:checked + .checkbox-field__label::after {
+  opacity: 1;
+}
+.checkbox-field--secondary .checkbox-field__label:hover {
+  opacity: 0.5;
+}
+.checkbox-field--primary .checkbox-field__input:checked + .checkbox-field__label {
+  border-color: #4e92ff;
+  background-color: #4e92ff;
+}
+.checkbox-field--primary .checkbox-field__input:checked + .checkbox-field__label::after {
+  opacity: 1;
+}
+.checkbox-field--primary .checkbox-field__label:hover {
   opacity: 0.5;
 }
 .checkbox-field--danger .checkbox-field__input:checked + .checkbox-field__label {
   border-color: #f05b5b;
   background-color: #f05b5b;
 }
-.checkbox-field--danger .checkbox-field__input:checked + .checkbox-field__label:after {
+.checkbox-field--danger .checkbox-field__input:checked + .checkbox-field__label::after {
   opacity: 1;
 }
 .checkbox-field--danger .checkbox-field__label:hover {
+  opacity: 0.5;
+}
+.checkbox-field--info .checkbox-field__input:checked + .checkbox-field__label {
+  border-color: #3c3b3b;
+  background-color: #3c3b3b;
+}
+.checkbox-field--info .checkbox-field__input:checked + .checkbox-field__label::after {
+  opacity: 1;
+}
+.checkbox-field--info .checkbox-field__label:hover {
   opacity: 0.5;
 }
 
