@@ -1,12 +1,15 @@
 @import "vars";
 
+// bg
 $header-bg: $cararra;
 $primary-bg: $alabaster;
 $secondary-bg: $white;
 
+// text
 $text-primary: $scorpion;
 $text-secondary: $patina;
 
+// cube
 $cube-bg-primary: $bermuda;
 $cube-color-primary: $patina;
 $cube-hover-primary: $riptide;
@@ -17,7 +20,13 @@ $cube-bg-third: $wax-flower;
 $cube-color-third: $atomic-tangerine;
 $cube-hover-third: $burning-orange;
 
+// circle
 $circle-bg: $mercury;
 $circle-color: $scorpion;
 
+// footer
 $footer-text: $silver;
+
+// menu
+$active-menu: $bermuda;
+$color-menu-text: $white;
