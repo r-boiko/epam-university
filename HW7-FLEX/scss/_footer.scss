@@ -1,0 +1,80 @@
+@import "color-matrix";
+
+footer {
+  padding: 0 90px 30px 40px;
+  background-image: url("../img/bg-footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .info {
+    .icons {
+      margin-bottom: 30px;
+
+      &__img {
+        &:nth-child(1) {
+          margin-left: 30px;
+        }
+
+        &:nth-child(2) {
+          margin-left: 65px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 60px;
+        }
+
+        &:nth-child(4) {
+          margin-left: 55px;
+        }
+      }
+    }
+
+    .copy {
+      color: $footer-text;
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    &__icon {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      background-color: $caper;
+      margin-left: 35px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        width: 35px;
+        height: 35px;
+        background-color: $wax-flower;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+        width: 35px;
+        height: 35px;
+        background-color: $bermuda;
+      }
+    }
+
+    &__title {
+      color: $footer-text;
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}

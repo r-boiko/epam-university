@@ -1,0 +1,196 @@
+@import "color-matrix";
+
+.triangle {
+  position: absolute;
+  border: 140px solid transparent;
+  border-top: 235px solid $wax-flower;
+  left: 50%;
+  top: 0;
+  transform: translateX(-100%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/svg/a-icon-pepper.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.cube {
+  position: relative;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  $cube: &;
+
+  &__icon {
+    width: 88px;
+    height: 117px;
+    transition: fill 300ms;
+
+    &--width_60 {
+      width: 60px;
+    }
+
+    &--width_120 {
+      width: 120px;
+    }
+  }
+
+  &__title {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 31px;
+    transition: color 300ms;
+  }
+
+  &__sub-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    transition: color 300ms;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    left: -40px;
+  }
+
+  &--right {
+    &::before {
+      left: unset;
+      right: -40px;
+    }
+  }
+
+  &--primary {
+    background-color: $cube-bg-primary;
+
+    &::before {
+      background-color: $cube-bg-primary;
+    }
+
+    #{$cube} {
+      &__icon {
+        fill: $cube-color-primary;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-color-primary;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $cube-bg-secondary;
+
+    &::before {
+      background-color: $cube-bg-secondary;
+    }
+
+    #{$cube} {
+      &__icon {
+        fill: $cube-color-secondary;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-color-secondary;
+      }
+    }
+  }
+
+  &--third {
+    background-color: $cube-bg-third;
+
+    &::before {
+      background-color: $cube-bg-third;
+    }
+
+    #{$cube} {
+      &__icon {
+        fill: $cube-color-third;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-color-third;
+      }
+    }
+  }
+
+  &--primary:hover {
+    #{$cube} {
+      &__icon {
+        fill: $cube-hover-primary;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-hover-primary;
+      }
+    }
+  }
+
+  &--secondary:hover {
+    .cube {
+      &__icon {
+        fill: $cube-hover-secondary;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-hover-secondary;
+      }
+    }
+  }
+
+  &--third:hover {
+    .cube {
+      &__icon {
+        fill: $cube-hover-third;
+      }
+
+      &__title,
+      &__sub-title {
+        color: $cube-hover-third;
+      }
+    }
+  }
+}
+
+.circle {
+  height: 140px;
+  width: 140px;
+  background-color: $circle-bg;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 455px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &__title {
+    color: $circle-color;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

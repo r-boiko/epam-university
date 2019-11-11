@@ -1,3 +1,39 @@
-body {
-  font-family: sans-serif;
+@import "reset";
+@import "vars";
+@import "color-matrix";
+@import "typography";
+@import "grid";
+@import "spacing";
+@import "figures";
+@import "header";
+@import "footer";
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.height-small {
+  height: $height-small;
+}
+
+.height-big {
+  height: $height-big;
+}
+
+.primary-bg {
+  background-color: $primary-bg;
+}
+
+.secondary-bg {
+  background-color: $secondary-bg;
+}
+
+.bg-kitchen {
+  background-image: url("../img/bg-kitchen.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
