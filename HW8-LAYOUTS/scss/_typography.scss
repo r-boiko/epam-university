@@ -1,0 +1,61 @@
+/* libre-franklin-regular - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Libre/libre-franklin-v4-latin-regular.eot');
+  src:
+    local('Libre Franklin'),
+    local('LibreFranklin-Regular'),
+    url('../fonts/Libre/libre-franklin-v4-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-regular.woff2') format('woff2'),
+    url('../fonts/Libre/libre-franklin-v4-latin-regular.woff') format('woff'),
+    url('../fonts/Libre/libre-franklin-v4-latin-regular.ttf') format('truetype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-regular.svg#LibreFranklin') format('svg');
+}
+
+/* libre-franklin-500 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Libre/libre-franklin-v4-latin-500.eot');
+  src:
+    local('Libre Franklin Medium'),
+    local('LibreFranklin-Medium'),
+    url('../fonts/Libre/libre-franklin-v4-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-500.woff2') format('woff2'),
+    url('../fonts/Libre/libre-franklin-v4-latin-500.woff') format('woff'),
+    url('../fonts/Libre/libre-franklin-v4-latin-500.ttf') format('truetype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-500.svg#LibreFranklin') format('svg');
+}
+
+/* libre-franklin-700 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Libre/libre-franklin-v4-latin-700.eot');
+  src:
+    local('Libre Franklin Bold'),
+    local('LibreFranklin-Bold'),
+    url('../fonts/Libre/libre-franklin-v4-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-700.woff2') format('woff2'),
+    url('../fonts/Libre/libre-franklin-v4-latin-700.woff') format('woff'),
+    url('../fonts/Libre/libre-franklin-v4-latin-700.ttf') format('truetype'),
+    url('../fonts/Libre/libre-franklin-v4-latin-700.svg#LibreFranklin') format('svg');
+}
+
+/* LucidaGrande-Regular - latin */
+@font-face {
+  font-family: "Lucida Grande", sans-serif;
+  src: url("../fonts/Lucida/LucidaGrande-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* LucidaGrande-Bold - latin */
+@font-face {
+  font-family: "Lucida Grande", sans-serif;
+  src: url("../fonts/Lucida/LucidaGrande-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

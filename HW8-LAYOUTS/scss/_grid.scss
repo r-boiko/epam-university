@@ -1,0 +1,69 @@
+$col-width: 60px;
+$col-offset: 40px;
+$col-count: 12;
+
+.container {
+  width: ($col-width * $col-count) + ($col-offset * $col-count) - $col-offset;
+  margin: 0 auto;
+}
+
+.row {
+  margin-right: -$col-offset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through $col-count {
+  .col-#{$i} {
+    width: ($col-width * $i) + ($col-offset * $i) - $col-offset;
+    padding-right: $col-offset;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
