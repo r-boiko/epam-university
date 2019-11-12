@@ -1,0 +1,23 @@
+@import "color-matrix";
+@import "vars";
+
+%section-title {
+  color: $primary-text-color;
+  font-family: $font-lucida;
+  font-size: 35px;
+  line-height: 46px;
+  margin: 0;
+}
+
+%uppercase-title {
+  color: $primary-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+%default-text {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 27px;
+}

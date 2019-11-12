@@ -1,1 +1,20 @@
-$tmp: 0;
+@import "vars";
+
+// header
+$header-primary-color: $white;
+$header-secondary-color: $mine-shaft;
+
+// form
+$form-bg-color: $white;
+$form-primary-color: $mine-shaft;
+$form-secondary-color: $white;
+$form-placeholder-color: $silver;
+$form-border-color: $gray;
+$form-btn-color: $royal-blue;
+$form-btn-hover-color: $egg-blue;
+
+// features
+$features-bg: $alabaster;
+
+//global
+$primary-text-color: $mine-shaft;

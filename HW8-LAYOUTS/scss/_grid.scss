@@ -1,23 +1,6 @@
-$col-width: 60px;
-$col-offset: 40px;
-$col-count: 12;
-
 .container {
-  width: ($col-width * $col-count) + ($col-offset * $col-count) - $col-offset;
+  width: 1160px;
   margin: 0 auto;
-}
-
-.row {
-  margin-right: -$col-offset;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@for $i from 1 through $col-count {
-  .col-#{$i} {
-    width: ($col-width * $i) + ($col-offset * $i) - $col-offset;
-    padding-right: $col-offset;
-  }
 }
 
 .d-flex {

@@ -1,0 +1,58 @@
+@import "color-matrix";
+@import "extends";
+
+.about {
+  padding: 100px 0 80px;
+
+  &__content-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    width: 50%;
+
+    .title {
+      @extend %section-title;
+
+      max-width: 560px;
+    }
+
+    .text {
+      @extend %default-text;
+
+      margin-top: 35px;
+      max-width: 460px;
+
+      p {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__benefits {
+    display: flex;
+    justify-content: space-between;
+
+    .benefit {
+      max-width: 260px;
+      margin: 10px 0 0 40px;
+
+      &__img {
+        border-radius: 3px;
+      }
+
+      &__title {
+        @extend %uppercase-title;
+
+        margin: 18px 0 8px;
+      }
+
+      &__sub-title {
+        @extend %default-text;
+
+        line-height: 23px;
+      }
+    }
+  }
+}

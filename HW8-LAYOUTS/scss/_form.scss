@@ -1,0 +1,63 @@
+@import "color-matrix";
+
+.form {
+  padding: 30px 37px 30px 43px;
+  width: 280px;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: $form-bg-color;
+
+  &__title {
+    color: $form-primary-color;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__field-group {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .label {
+      text-align: left;
+      color: $form-primary-color;
+      font-size: 16px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .input {
+      height: 40px;
+      width: calc(100% - 2px);
+      border: 1px solid $form-border-color;
+      border-radius: 3px;
+      font-size: 16px;
+      color: $form-primary-color;
+      text-indent: 10px;
+
+      &::placeholder {
+        color: $form-placeholder-color;
+      }
+    }
+
+    .submit {
+      height: 43px;
+      width: 100%;
+      border-radius: 3px;
+      border: none;
+      background-color: $form-btn-color;
+      box-shadow: 0 3px 4px 0 rgba(72, 72, 72, 0.5);
+      font-size: 16px;
+      color: $form-secondary-color;
+      transition: background-color 300ms;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $form-btn-hover-color;
+      }
+    }
+  }
+}
