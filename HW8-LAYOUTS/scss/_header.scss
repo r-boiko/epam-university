@@ -31,3 +31,19 @@
     text-align: center;
   }
 }
+
+// media
+@media (max-width: 1199px) {
+  .header {
+    padding: 60px 0 45px;
+    background-image: url("../img/header-1024.png");
+
+    &__title {
+      margin: 0 0 32px;
+    }
+
+    &__description {
+      margin: 0 auto 50px;
+    }
+  }
+}

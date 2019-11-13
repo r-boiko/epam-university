@@ -392,6 +392,11 @@ template {
   justify-content: space-around;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 930px;
+  }
+}
 /* libre-franklin-regular - latin */
 @font-face {
   font-family: "Libre Franklin";
@@ -457,6 +462,18 @@ template {
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .header {
+    padding: 60px 0 45px;
+    background-image: url("../img/header-1024.png");
+  }
+  .header__title {
+    margin: 0 0 32px;
+  }
+  .header__description {
+    margin: 0 auto 50px;
+  }
+}
 .form {
   padding: 30px 37px 30px 43px;
   width: 280px;
@@ -532,6 +549,12 @@ template {
   line-height: 27px;
 }
 
+@media (max-width: 1199px) {
+  .questions__title, .features__title, .about__description .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .about {
   padding: 100px 0 80px;
 }
@@ -557,6 +580,7 @@ template {
   justify-content: space-between;
 }
 .about__benefits .benefit {
+  width: 100%;
   max-width: 260px;
   margin: 10px 0 0 40px;
 }
@@ -567,9 +591,31 @@ template {
   margin: 18px 0 8px;
 }
 .about__benefits .benefit__sub-title {
-  line-height: 23px;
+  line-height: 23px !important;
 }
 
+@media (max-width: 1199px) {
+  .about {
+    padding: 70px 0;
+  }
+  .about__description {
+    width: 100%;
+    max-width: 450px;
+  }
+  .about__description .text {
+    margin-top: 20px;
+  }
+  .about__description .text p {
+    margin-bottom: 15px;
+  }
+  .about__benefits .benefit {
+    max-width: 210px;
+    margin: 10px 0 0 30px;
+  }
+  .about__benefits .benefit__title {
+    margin: 20px 0 12px;
+  }
+}
 .questions__title, .features__title, .about__description .title {
   color: #333;
   font-family: "Lucida Grande", sans-serif;
@@ -592,6 +638,12 @@ template {
   line-height: 27px;
 }
 
+@media (max-width: 1199px) {
+  .questions__title, .features__title, .about__description .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .features {
   background-color: #f8f8f8;
   padding: 95px 0 100px;
@@ -612,7 +664,6 @@ template {
   border-radius: 3px;
 }
 .features__items {
-  width: 100%;
   max-width: 560px;
   margin-top: 5px;
 }
@@ -624,6 +675,7 @@ template {
   margin-bottom: 50px;
 }
 .features__items .item__icon {
+  min-width: 35px;
   margin: -10px 25px 0 0;
 }
 .features__items .item__content {
@@ -632,11 +684,28 @@ template {
 .features__items .item__content .title {
   margin-bottom: 15px;
 }
+@media (max-width: 1199px) {
+  .features {
+    padding: 60px 0 68px;
+  }
+  .features__img {
+    max-width: 530px;
+  }
+  .features__items {
+    margin-top: 0;
+  }
+  .features__items .item__icon {
+    margin: -10px 15px 0 0;
+  }
+  .features__items .item__content {
+    max-width: 320px;
+  }
+  .features__items .item__content .hidden-words {
+    display: none;
+  }
+}
 .gallery {
   display: flex;
-}
-.gallery__img {
-  width: 100%;
 }
 
 .questions__title, .about__description .title, .features__title {
@@ -661,6 +730,12 @@ template {
   line-height: 27px;
 }
 
+@media (max-width: 1199px) {
+  .questions__title, .about__description .title, .features__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .questions {
   padding: 100px 0 55px;
 }
@@ -721,6 +796,18 @@ template {
     transform: translateY(-50%) rotate(45deg);
   }
 }
+@media (max-width: 1199px) {
+  .questions {
+    padding: 70px 0 15px;
+  }
+  .questions__sub-title {
+    margin: 20px 0 60px;
+  }
+  .questions__content .question {
+    max-width: 450px;
+    margin-bottom: 60px;
+  }
+}
 .about__description .title, .features__title, .questions__title {
   color: #333;
   font-family: "Lucida Grande", sans-serif;
@@ -743,6 +830,12 @@ template {
   line-height: 27px;
 }
 
+@media (max-width: 1199px) {
+  .about__description .title, .features__title, .questions__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .footer {
   padding: 20px 0;
   background-color: #f8f8f8;
@@ -753,6 +846,11 @@ template {
 
 body {
   font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

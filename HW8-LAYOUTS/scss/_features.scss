@@ -29,7 +29,6 @@
   }
 
   &__items {
-    width: 100%;
     max-width: 560px;
     margin-top: 5px;
 
@@ -42,6 +41,7 @@
       }
 
       &__icon {
+        min-width: 35px;
         margin: -10px 25px 0 0;
       }
 
@@ -56,6 +56,35 @@
 
         .text {
           @extend %default-text;
+        }
+      }
+    }
+  }
+}
+
+// media
+@media (max-width: 1199px) {
+  .features {
+    padding: 60px 0 68px;
+
+    &__img {
+      max-width: 530px;
+    }
+
+    &__items {
+      margin-top: 0;
+
+      .item {
+        &__icon {
+          margin: -10px 15px 0 0;
+        }
+
+        &__content {
+          max-width: 320px;
+
+          .hidden-words {
+            display: none;
+          }
         }
       }
     }

@@ -92,3 +92,21 @@
     }
   }
 }
+
+// media
+@media (max-width: 1199px) {
+  .questions {
+    padding: 70px 0 15px;
+
+    &__sub-title {
+      margin: 20px 0 60px;
+    }
+
+    &__content {
+      .question {
+        max-width: 450px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

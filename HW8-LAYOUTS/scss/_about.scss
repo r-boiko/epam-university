@@ -34,6 +34,7 @@
     justify-content: space-between;
 
     .benefit {
+      width: 100%;
       max-width: 260px;
       margin: 10px 0 0 40px;
 
@@ -50,7 +51,38 @@
       &__sub-title {
         @extend %default-text;
 
-        line-height: 23px;
+        line-height: 23px !important;
+      }
+    }
+  }
+}
+
+// media
+@media (max-width: 1199px) {
+  .about {
+    padding: 70px 0;
+
+    &__description {
+      width: 100%;
+      max-width: 450px;
+
+      .text {
+        margin-top: 20px;
+
+        p {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &__benefits {
+      .benefit {
+        max-width: 210px;
+        margin: 10px 0 0 30px;
+
+        &__title {
+          margin: 20px 0 12px;
+        }
       }
     }
   }

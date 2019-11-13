@@ -52,3 +52,10 @@
 .justify-content-around {
   justify-content: space-around;
 }
+
+// media
+@media (max-width: 1199px) {
+  .container {
+    max-width: 930px;
+  }
+}
