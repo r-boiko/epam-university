@@ -30,11 +30,9 @@
     line-height: 27px;
     text-align: center;
   }
-}
 
-// media
-@media (max-width: 1199px) {
-  .header {
+  // media
+  @media (max-width: 1199px) {
     padding: 60px 0 45px;
     background-image: url("../img/header-1024.png");
 
@@ -44,6 +42,26 @@
 
     &__description {
       margin: 0 auto 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 60px 0 70px;
+    background-image: url("../img/header-768.png");
+
+    &__title {
+      margin: 0 0 35px;
+    }
+
+    &__sub-title {
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      margin: 0 auto 52px;
+      font-size: 16px;
     }
   }
 }

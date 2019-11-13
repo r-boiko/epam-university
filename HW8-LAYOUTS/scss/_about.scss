@@ -35,7 +35,7 @@
 
     .benefit {
       width: 100%;
-      max-width: 260px;
+      max-width: 270px;
       margin: 10px 0 0 40px;
 
       &__img {
@@ -55,11 +55,9 @@
       }
     }
   }
-}
 
-// media
-@media (max-width: 1199px) {
-  .about {
+  // media
+  @media (max-width: 1199px) {
     padding: 70px 0;
 
     &__description {
@@ -83,6 +81,38 @@
         &__title {
           margin: 20px 0 12px;
         }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+
+    &__content-wrap {
+      flex-direction: column;
+    }
+
+    &__description {
+      max-width: 100%;
+
+      .title {
+        max-width: 450px;
+      }
+
+      .text {
+        max-width: 570px;
+        margin-top: 30px;
+
+        p {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &__benefits {
+      .benefit {
+        margin: 5px 0 0 0;
+        max-width: 330px;
       }
     }
   }
