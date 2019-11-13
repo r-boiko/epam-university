@@ -512,9 +512,17 @@ template {
   font-size: 16px;
   color: #333;
   text-indent: 10px;
+  outline: none;
+  transition: border 300ms;
 }
 .form__field-group .input::placeholder {
   color: #cacaca;
+}
+.form__field-group .input:focus {
+  border-color: #3358de;
+}
+.form__field-group .input:invalid {
+  border-color: #b22746;
 }
 .form__field-group .submit {
   height: 43px;

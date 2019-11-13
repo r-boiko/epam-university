@@ -37,9 +37,19 @@
       font-size: 16px;
       color: $form-primary-color;
       text-indent: 10px;
+      outline: none;
+      transition: border 300ms;
 
       &::placeholder {
         color: $form-placeholder-color;
+      }
+
+      &:focus {
+        border-color: $form-border-focus-color;
+      }
+
+      &:invalid {
+        border-color: $form-border-invalid-color;
       }
     }
 
