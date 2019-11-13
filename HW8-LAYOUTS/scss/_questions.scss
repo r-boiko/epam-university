@@ -45,6 +45,7 @@
       }
     }
   }
+
   // media
   @media (max-width: 1199px) {
     padding: 70px 0 15px;
@@ -132,6 +133,26 @@
               transform: translateY(-50%) rotate(45deg);
             }
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 65px 0 50px;
+
+    &__content {
+      .question {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 479px) {
+    &__content {
+      .question {
+        &__title {
+          padding: 15px 45px 15px 10px;
         }
       }
     }

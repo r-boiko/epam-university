@@ -12,4 +12,12 @@
   @media (max-width: 991px) {
     max-width: 690px;
   }
+
+  @media (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 479px) {
+    max-width: calc(100% - 30px);
+  }
 }

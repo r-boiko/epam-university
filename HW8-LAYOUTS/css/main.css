@@ -353,6 +353,16 @@ template {
     max-width: 690px;
   }
 }
+@media (max-width: 767px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+}
 
 /* libre-franklin-regular - latin */
 @font-face {
@@ -449,10 +459,29 @@ template {
     font-size: 16px;
   }
 }
+@media (max-width: 767px) {
+  .header {
+    padding: 30px 0 75px;
+    background-image: url("../img/header-480.png");
+  }
+  .header__title {
+    margin: 0 0 80px;
+  }
+  .header__sub-title {
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .header__description {
+    max-width: 370px;
+    margin: 45px auto 100px;
+  }
+}
 
 .form {
   padding: 30px 37px 30px 43px;
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
   border-radius: 3px;
   background-color: #fff;
@@ -616,6 +645,29 @@ template {
     max-width: 330px;
   }
 }
+@media (max-width: 767px) {
+  .about {
+    padding: 70px 0 30px;
+  }
+  .about__description {
+    max-width: 100%;
+  }
+  .about__description .text {
+    max-width: 100%;
+    margin-top: 28px;
+  }
+  .about__benefits {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .about__benefits .benefit {
+    margin: 5px 0 47px 0;
+    max-width: 100%;
+  }
+  .about__benefits .benefit__title {
+    margin: 5px 0 5px;
+  }
+}
 
 .questions__title, .features__title, .about__description .title {
   color: #333;
@@ -727,6 +779,20 @@ template {
   }
   .features__items .item__content {
     max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .features {
+    padding: 60px 0 67px;
+  }
+  .features__items {
+    margin-top: 25px;
+  }
+  .features__items .item__icon {
+    margin: -10px 15px 0 0;
+  }
+  .features__items .item:not(:last-child) {
+    margin-bottom: 55px;
   }
 }
 
@@ -873,6 +939,19 @@ template {
   }
   .questions__content .question__toggle:checked ~ .question__title::after {
     transform: translateY(-50%) rotate(45deg);
+  }
+}
+@media (max-width: 767px) {
+  .questions {
+    padding: 65px 0 50px;
+  }
+  .questions__content .question {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .questions__content .question__title {
+    padding: 15px 45px 15px 10px;
   }
 }
 
