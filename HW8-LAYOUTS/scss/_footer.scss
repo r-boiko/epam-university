@@ -1,1 +1,13 @@
-$tmp: 0;
+@import "color-matrix";
+@import "extends";
+
+.footer {
+  padding: 20px 0;
+  background-color: $features-bg;
+
+  .copyright {
+    @extend %default-text;
+
+    text-align: center;
+  }
+}
