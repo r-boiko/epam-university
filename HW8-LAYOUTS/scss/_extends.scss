@@ -1,5 +1,4 @@
 @import "color-matrix";
-@import "vars";
 
 %section-title {
   color: $primary-text-color;
@@ -7,6 +6,7 @@
   font-size: 35px;
   line-height: 46px;
   margin: 0;
+  font-weight: 400;
 }
 
 %uppercase-title {
