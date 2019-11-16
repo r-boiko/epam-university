@@ -1,0 +1,36 @@
+@import "color-matrix";
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-table;
+  padding: 10px 25px;
+  border: 1px solid $btn-primary-color;
+  border-radius: 5px;
+  color: $btn-primary-color;
+  font-size: 15px;
+  line-height: 25px;
+  transition: background-color 300ms, color 300ms;
+
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $btn-primary-color;
+    color: $btn-secondary-color;
+  }
+
+  &--filled {
+    background: $btn-primary-color;
+    color: $btn-secondary-color;
+
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+      color: $btn-primary-color;
+    }
+  }
+}

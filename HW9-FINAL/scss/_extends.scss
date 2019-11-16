@@ -1,1 +1,47 @@
 @import "color-matrix";
+
+%default-title {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  color: $primary-text-color;
+  font-family: $font-hind;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid $white;
+    border-right: 1px solid $primary-text-color;
+    border-bottom: 1px solid $primary-text-color;
+    border-left: 1px solid $primary-text-color;
+    width: calc(100% - 4px);
+    height: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 2px);
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid $primary-text-color;
+  }
+}
+
+%default-text {
+  color: $primary-text-color;
+  font-family: $font-hind;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+%default-section {
+  margin-top: 80px;
+}

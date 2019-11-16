@@ -1,0 +1,17 @@
+@import "color-matrix";
+@import "extends";
+
+.about-us {
+  @extend %default-section;
+
+  &__title {
+    @extend %default-title;
+  }
+
+  &__sub-title {
+    @extend %default-text;
+
+    text-align: center;
+    margin-top: 25px;
+  }
+}
