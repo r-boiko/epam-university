@@ -1,0 +1,128 @@
+@import "color-matrix";
+@import "extends";
+@import "grid";
+
+.latest-portfolio {
+  @extend %default-section;
+
+  padding-bottom: 60px;
+
+  &__title {
+    @extend %default-title;
+  }
+
+  &__sub-title {
+    @extend %default-sub-title;
+  }
+
+  &__item-wrapper {
+    @include make-sm-column(4);
+
+    .item {
+      max-width: 360px;
+      position: relative;
+      border-radius: 3px;
+
+      &__overlay {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: opacity 300ms;
+        border-radius: 3px;
+      }
+
+      &__permalink {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 300ms;
+        text-align: center;
+
+        .title {
+          text-transform: uppercase;
+          color: $item-color;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 32px;
+          margin: 5px 0 -5px;
+        }
+
+        .sub-title {
+          color: $item-color;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 25px;
+        }
+      }
+
+      &__controls {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 300ms;
+
+        .link {
+          cursor: pointer;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          display: inline-block;
+          width: 50px;
+          height: 60px;
+          background-image: url("../img/svg/a-icon-attach.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .zoom {
+          cursor: pointer;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          display: inline-block;
+          width: 50px;
+          height: 60px;
+          background-image: url("../img/svg/a-icon-search-1.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      &:hover {
+        .item {
+          &__overlay {
+            opacity: 1;
+          }
+
+          &__controls {
+            opacity: 1;
+            pointer-events: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &__show-all {
+    margin-top: 83px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

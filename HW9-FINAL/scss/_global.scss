@@ -4,6 +4,11 @@ body {
   font-family: $font-hind;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .mt_80 {
   margin-top: 80px;
 }

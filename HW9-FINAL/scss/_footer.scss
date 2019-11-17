@@ -1,2 +1,52 @@
 @import "color-matrix";
 @import "extends";
+
+.footer {
+  background-color: $footer-bg;
+  border-top: 1px solid #ddd;
+  padding: 22px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__socials {
+    .link {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &--facebook {
+        background-image: url("../img/svg/a-icon-facebook.svg");
+      }
+
+      &--instagram {
+        background-image: url("../img/svg/a-icon-instagram.svg");
+      }
+
+      &--dribbble {
+        background-image: url("../img/svg/a-icon-dribbble.svg");
+      }
+    }
+  }
+
+  &__logo {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-left: 60px;
+  }
+
+  &__copy {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

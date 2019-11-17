@@ -35,6 +35,16 @@
   }
 }
 
+%default-sub-title {
+  color: $primary-text-color;
+  font-family: $font-hind;
+  font-size: 17px;
+  line-height: 26px;
+  max-width: 445px;
+  margin: 25px auto 60px;
+  text-align: center;
+}
+
 %default-text {
   color: $primary-text-color;
   font-family: $font-hind;
@@ -43,5 +53,5 @@
 }
 
 %default-section {
-  margin-top: 80px;
+  padding-top: 80px;
 }
