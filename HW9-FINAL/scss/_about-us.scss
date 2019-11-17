@@ -14,7 +14,7 @@
   }
 
   &__items {
-    @include make-sm-column(3);
+    @include make-md-column(3);
 
     .item {
       position: relative;
@@ -75,7 +75,7 @@
   }
 
   &__video {
-    @include make-sm-column(9);
+    @include make-md-column(9);
 
     position: relative;
 
@@ -96,6 +96,15 @@
     .player {
       width: 100%;
       height: 590px;
+    }
+  }
+
+  // media
+  @media (max-width: 991px) {
+    &__items {
+      .item {
+        max-width: 100%;
+      }
     }
   }
 }

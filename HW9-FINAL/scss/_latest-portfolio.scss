@@ -16,7 +16,7 @@
   }
 
   &__item-wrapper {
-    @include make-sm-column(4);
+    @include make-md-column(4);
 
     .item {
       max-width: 360px;
@@ -124,5 +124,25 @@
     margin-top: 83px;
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+
+  // media
+  @media (max-width: 991px) {
+    &__item-wrapper {
+      .item {
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        &__thumbnail {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__show-all {
+      margin-top: 0;
+    }
   }
 }

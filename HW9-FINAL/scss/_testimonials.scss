@@ -66,4 +66,31 @@
       }
     }
   }
+
+  // media
+  @media (max-width: 1199px) {
+    &__slider {
+      .slider__control {
+        .prev {
+          left: 0;
+        }
+
+        .next {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__slide {
+      max-width: 100%;
+      flex-direction: column;
+
+      .testimonial-description,
+      .testimonial-image img {
+        width: 100%;
+      }
+    }
+  }
 }

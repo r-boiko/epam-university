@@ -14,7 +14,7 @@
   }
 
   &__post-wrapper {
-    @include make-sm-column(4);
+    @include make-md-column(4);
 
     .post {
       max-width: 360px;
@@ -73,6 +73,26 @@
             background-position: center;
             background-size: cover;
           }
+        }
+      }
+    }
+  }
+
+  // media
+  @media (max-width: 991px) {
+    &__post-wrapper {
+      .post {
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        &__thumbnail {
+          .img {
+            width: 100%;
+          }
+        }
+
+        &__description {
+          max-width: 100%;
         }
       }
     }

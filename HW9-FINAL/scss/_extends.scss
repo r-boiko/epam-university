@@ -55,3 +55,14 @@
 %default-section {
   padding-top: 80px;
 }
+
+// media
+@media (max-width: 991px) {
+  %default-sub-title {
+    margin: 25px auto 30px;
+  }
+
+  %default-section {
+    padding-top: 40px;
+  }
+}

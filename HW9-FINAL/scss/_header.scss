@@ -77,4 +77,22 @@
       }
     }
   }
+
+  // media
+  @media (max-width: 767px) {
+    &__nav {
+      .menu {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        &__item {
+          margin-right: 15px;
+
+          &:not(:first-child) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
