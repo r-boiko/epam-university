@@ -2,6 +2,7 @@
 @import "extends";
 
 .footer {
+  position: relative;
   background-color: $footer-bg;
   border-top: 1px solid #ddd;
   padding: 22px 0;
@@ -48,6 +49,27 @@
   &__copy {
     font-size: 15px;
     line-height: 25px;
+  }
+
+  .up {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid $slider-primary-color;
+    border-radius: 5px;
+    background-color: $slider-secondary-color;
+    background-image: url("../img/svg/a-icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: box-shadow 300ms;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 #6d6d6d;
+    }
   }
 
   // media

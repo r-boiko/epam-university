@@ -7709,6 +7709,7 @@ hr {
   }
 }
 .footer {
+  position: relative;
   background-color: #f8f8f8;
   border-top: 1px solid #ddd;
   padding: 22px 0;
@@ -7746,6 +7747,25 @@ hr {
 .footer__copy {
   font-size: 15px;
   line-height: 25px;
+}
+.footer .up {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #4d4949;
+  border-radius: 5px;
+  background-color: #fff;
+  background-image: url("../img/svg/a-icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  transition: box-shadow 300ms;
+}
+.footer .up:hover {
+  box-shadow: 0 0 10px 0 #6d6d6d;
 }
 @media (max-width: 767px) {
   .footer__inner {
