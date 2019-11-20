@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW9_final: blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<header class="header" id="up">
+    <div class="container">
+        <div class="row">
+            <a href="/" class="header__logo">BlogWorld</a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#latest-portfolio">Portfolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link active" href="">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Pages</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about-us">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact-us">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__info">
+            <h1 class="title">
+                Ideas and perspectives you won’t find anywhere else.
+            </h1>
+            <div class="sub-title">
+                BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and storytellers to
+                bring you the smartest takes on topics that matter. So whatever your interest, you can always find fresh
+                thinking and unique perspectives.
+            </div>
+            <div class="controls">
+                <a href="/" class="btn btn--filled">Explore</a>
+                <a href="/" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="blog">
+    <div class="container">
+        <h2 class="blog__title">Blog</h2>
+        <div class="search search--right">
+            <input class="search__input" type="search" placeholder="Search by author">
+            <input class="search__submit" type="submit">
+        </div>
+        <div class="blog__content">
+            <div class="blog-post blog-post--video">
+                <div class="blog-post__preview">
+                    <video class="player" src="./video/video.mp4" controls poster="./img/blog-post-1.png">
+                        Sorry, your browser doesn't support embedded videos,
+                        but don't worry, you can <a href="./video/video.mp4">download it</a>
+                        and watch it with your favorite video player!
+                    </video>
+                    <span class="play"></span>
+                </div>
+                <div class="blog-post__detail">
+                    <div class="blog-post__head">
+                        <img class="avatar" src="./img/blog-user-1.png" alt="img">
+                        <div class="title">Neil Richards</div>
+                        <div class="info">
+                            <span class="date">11 oct, 2019</span>
+                            <span class="long">7 min read</span>
+                            <span class="comments">19</span>
+                            <span class="rating">
+                                <span class="rating__star"></span>
+                                <span class="rating__star"></span>
+                                <span class="rating__star rating__star--half_filled"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blog-post__body">
+                        <div class="title">In the Future We Will All Live in Star Wars</div>
+                        <div class="description">
+                            The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining
+                            narrative of our online moment concerns the decline of text, and the exploding reach and
+                            power of audio and video …
+                        </div>
+                        <a href="/" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--music">
+                <div class="blog-post__preview">
+                    <img class="thumbnail" src="./img/blog-post-2.png" alt="img">
+                </div>
+                <div class="blog-post__detail">
+                    <div class="blog-post__head">
+                        <img class="avatar" src="./img/blog-user-2.png" alt="img">
+                        <div class="title">Sarah Healy</div>
+                        <div class="info">
+                            <span class="date">02 oct, 2019</span>
+                            <span class="long">12 min read</span>
+                            <span class="comments">4</span>
+                            <span class="rating">
+                                <span class="rating__star"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blog-post__body">
+                        <div class="title">Far far away, behind the word mountains</div>
+                        <audio class="audio-player" controls>
+                            <source src="./audio/audio.mp3" type="audio/mpeg">
+                            <p>Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+                                <a href="./audio/audio.mp3">ссылка на аудио</a></p>
+                        </audio>
+                        <div class="description">
+                            Fog down the river, where it rolls deified among the tiers of shipping and the waterside
+                            pollutions of a great (and dirty) …
+                        </div>
+                        <a href="/" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--image">
+                <div class="blog-post__preview">
+                    <img class="thumbnail" src="./img/blog-post-3.png" alt="img">
+                </div>
+                <div class="blog-post__detail">
+                    <div class="blog-post__head">
+                        <img class="avatar" src="./img/blog-user-3.png" alt="img">
+                        <div class="title">Grace Noh</div>
+                        <div class="info">
+                            <span class="date">23 sep, 2019</span>
+                            <span class="long">16 min read</span>
+                            <span class="comments">421</span>
+                            <span class="rating">
+                                <span class="rating__star"></span>
+                                <span class="rating__star"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blog-post__body">
+                        <div class="title">In the Future We Will All Live in Star Wars</div>
+                        <div class="description">
+                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                            ocean. A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia. It is a paradisematic country, in which roasted …
+                        </div>
+                        <a href="/" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-post__detail">
+                    <div class="blog-post__head">
+                        <img class="avatar" src="./img/blog-user-4.png" alt="img">
+                        <div class="title">Alex Zlatkus</div>
+                        <div class="info">
+                            <span class="date">11 Aug, 2019</span>
+                            <span class="long">17 min read</span>
+                            <span class="comments">77</span>
+                            <span class="rating">
+                                <span class="rating__star"></span>
+                                <span class="rating__star"></span>
+                                <span class="rating__star"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                                <span class="rating__star rating__star--empty"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blog-post__body">
+                        <div class="title">In the Future We Will All Live in Star Wars</div>
+                        <div class="description">
+                            Fog down the river, where it rolls deified among the tiers of shipping and the waterside
+                            pollutions of a great (and dirty) city. Fog on the Essex marshes, fog on the Kentish
+                            heights. Fog creeping into the cabooses of collier-brigs; fog lying out on. Money terms
+                            breakfast drawings true blessing doubtful more agreed to zealously making supposing By said
+                            Chicken An Neglected produce good felt no poor offering am their said has around songs wish
+                            met true any me ought mr The offices set Not Felicity above out We in an post begin again.
+                        </div>
+                        <a href="/" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog__read-more">
+            <a href="/" class="btn btn--filled">Read more</a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__socials">
+                <a href="/" class="link link--facebook"></a>
+                <a href="/" class="link link--instagram"></a>
+                <a href="/" class="link link--dribbble"></a>
+            </div>
+            <div class="footer__logo">
+                BlogWorld
+            </div>
+            <div class="footer__copy">
+                ©2019 All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    <a href="#up" class="up"></a>
+</footer>
+</body>
+</html>

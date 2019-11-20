@@ -1497,7 +1497,7 @@ hr {
   }
 }
 
-.contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
+.blog__title, .contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -1507,7 +1507,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
+.blog__title::after, .contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -1520,7 +1520,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
+.blog__title::before, .contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -1540,7 +1540,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -1549,6 +1549,54 @@ hr {
 
 .contact-us, .testimonials, .latest-portfolio, .latest-posts, .about-us {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -2582,11 +2630,7 @@ hr {
   }
 }
 .header {
-  padding: 25px 0 205px;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 25px 0;
 }
 .header__logo {
   position: relative;
@@ -2636,11 +2680,12 @@ hr {
   line-height: 32px;
   color: #4d4949;
 }
-.header__nav .menu__link:hover, .header__nav .menu__link:active {
+.header__nav .menu__link:hover, .header__nav .menu__link:active, .header__nav .menu__link.active {
   color: #4d4949;
   text-decoration: underline;
 }
 .header__info {
+  display: none;
   margin-top: 95px;
 }
 .header__info .title {
@@ -2670,9 +2715,28 @@ hr {
   .header__nav .menu__item:not(:first-child) {
     margin-left: 0;
   }
+  .header__info {
+    margin-top: 40px;
+  }
 }
 
-.contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
+.home .header {
+  padding: 25px 0 205px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home .header__info {
+  display: block;
+}
+@media (max-width: 767px) {
+  .home .header {
+    padding: 25px 0 40px;
+  }
+}
+
+.blog__title, .contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -2682,7 +2746,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
+.blog__title::after, .contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -2695,7 +2759,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
+.blog__title::before, .contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -2715,7 +2779,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -2724,6 +2788,54 @@ hr {
 
 .contact-us, .testimonials, .latest-portfolio, .latest-posts, .about-us {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -3851,7 +3963,7 @@ hr {
   }
 }
 
-.contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
+.blog__title, .contact-us__title, .testimonials__title, .latest-portfolio__title, .latest-posts__title, .about-us__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -3861,7 +3973,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
+.blog__title::after, .contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .latest-posts__title::after, .about-us__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -3874,7 +3986,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
+.blog__title::before, .contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .latest-posts__title::before, .about-us__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -3894,7 +4006,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -3903,6 +4015,54 @@ hr {
 
 .contact-us, .testimonials, .latest-portfolio, .latest-posts, .about-us {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -4969,32 +5129,6 @@ hr {
 }
 .latest-posts__post-wrapper .post__info {
   margin-top: 20px;
-  color: #818181;
-  font-size: 15px;
-  line-height: 25px;
-}
-.latest-posts__post-wrapper .post__info .long::before, .latest-posts__post-wrapper .post__info .long::after {
-  content: "";
-  display: inline-block;
-  height: 3px;
-  width: 3px;
-  border-radius: 50%;
-  line-height: 25px;
-  background-color: #818181;
-  margin: 0 8px;
-  position: relative;
-  top: -3px;
-}
-.latest-posts__post-wrapper .post__info .comments::before {
-  content: "";
-  display: inline-block;
-  height: 13px;
-  width: 14px;
-  margin-right: 8px;
-  background-image: url("../img/svg/a-icon-comment.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 @media (max-width: 991px) {
   .latest-posts__post-wrapper .post {
@@ -5009,7 +5143,7 @@ hr {
   }
 }
 
-.contact-us__title, .testimonials__title, .latest-portfolio__title, .about-us__title, .latest-posts__title {
+.blog__title, .contact-us__title, .testimonials__title, .latest-portfolio__title, .about-us__title, .latest-posts__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -5019,7 +5153,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .about-us__title::after, .latest-posts__title::after {
+.blog__title::after, .contact-us__title::after, .testimonials__title::after, .latest-portfolio__title::after, .about-us__title::after, .latest-posts__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -5032,7 +5166,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .about-us__title::before, .latest-posts__title::before {
+.blog__title::before, .contact-us__title::before, .testimonials__title::before, .latest-portfolio__title::before, .about-us__title::before, .latest-posts__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -5052,7 +5186,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -5061,6 +5195,54 @@ hr {
 
 .contact-us, .testimonials, .latest-portfolio, .about-us, .latest-posts {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -6214,7 +6396,7 @@ hr {
   }
 }
 
-.contact-us__title, .testimonials__title, .about-us__title, .latest-posts__title, .latest-portfolio__title {
+.blog__title, .contact-us__title, .testimonials__title, .about-us__title, .latest-posts__title, .latest-portfolio__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -6224,7 +6406,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .testimonials__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after {
+.blog__title::after, .contact-us__title::after, .testimonials__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -6237,7 +6419,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .testimonials__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before {
+.blog__title::before, .contact-us__title::before, .testimonials__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -6257,7 +6439,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -6266,6 +6448,54 @@ hr {
 
 .contact-us, .testimonials, .about-us, .latest-posts, .latest-portfolio {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -6347,7 +6577,7 @@ hr {
   }
 }
 
-.contact-us__title, .about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title {
+.blog__title, .contact-us__title, .about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -6357,7 +6587,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.contact-us__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after, .testimonials__title::after {
+.blog__title::after, .contact-us__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after, .testimonials__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -6370,7 +6600,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.contact-us__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before, .testimonials__title::before {
+.blog__title::before, .contact-us__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before, .testimonials__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -6390,7 +6620,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -6399,6 +6629,54 @@ hr {
 
 .contact-us, .about-us, .latest-posts, .latest-portfolio, .testimonials {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -7645,7 +7923,7 @@ hr {
   }
 }
 
-.about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title, .contact-us__title {
+.blog__title, .about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title, .contact-us__title {
   position: relative;
   display: table;
   margin: 0 auto;
@@ -7655,7 +7933,7 @@ hr {
   font-weight: 600;
   line-height: 39px;
 }
-.about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after, .testimonials__title::after, .contact-us__title::after {
+.blog__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after, .testimonials__title::after, .contact-us__title::after {
   content: "";
   position: absolute;
   border-top: 1px solid #fff;
@@ -7668,7 +7946,7 @@ hr {
   transform: translateX(-50%);
   bottom: -10px;
 }
-.about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before, .testimonials__title::before, .contact-us__title::before {
+.blog__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before, .testimonials__title::before, .contact-us__title::before {
   content: "";
   position: absolute;
   width: calc(100% + 2px);
@@ -7688,7 +7966,7 @@ hr {
   text-align: center;
 }
 
-.header__info .sub-title {
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
   color: #4d4949;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 17px;
@@ -7697,6 +7975,54 @@ hr {
 
 .about-us, .latest-posts, .latest-portfolio, .testimonials, .contact-us {
   padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
 }
 
 @media (max-width: 991px) {
@@ -7781,13 +8107,284 @@ body {
   font-family: "Hind Siliguri", sans-serif;
 }
 
-img {
+img,
+video,
+audio {
   max-width: 100%;
-  height: auto;
 }
 
 .mt_80 {
   margin-top: 80px;
+}
+
+.search {
+  width: 320px;
+  max-width: 100%;
+  height: 45px;
+  display: flex;
+  border: 1px solid #4d4949;
+  border-radius: 5px;
+  margin: 65px 0 30px;
+}
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  text-indent: 10px;
+  color: #4d4949;
+  font-size: 15px;
+  line-height: 25px;
+  outline: none;
+}
+.search__submit {
+  border-radius: 5px;
+  font-size: 0;
+  width: 30px;
+  height: 100%;
+  margin-right: 10px;
+  background-image: url("../img/svg/a-icon-search-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+.search--right {
+  margin-left: 100%;
+  transform: translateX(-100%);
+}
+
+.blog__title, .about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title, .contact-us__title {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 39px;
+}
+.blog__title::after, .about-us__title::after, .latest-posts__title::after, .latest-portfolio__title::after, .testimonials__title::after, .contact-us__title::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #4d4949;
+  border-bottom: 1px solid #4d4949;
+  border-left: 1px solid #4d4949;
+  width: calc(100% - 4px);
+  height: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.blog__title::before, .about-us__title::before, .latest-posts__title::before, .latest-portfolio__title::before, .testimonials__title::before, .contact-us__title::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #4d4949;
+}
+
+.about-us__sub-title, .latest-posts__sub-title, .latest-portfolio__sub-title, .contact-us__sub-title {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  max-width: 445px;
+  margin: 25px auto 60px;
+  text-align: center;
+}
+
+.blog__content .blog-post__body .description, .blog__content .blog-post__head .title, .header__info .sub-title {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.about-us, .latest-posts, .latest-portfolio, .testimonials, .contact-us {
+  padding-top: 80px;
+}
+
+.blog__content .blog-post__head .info, .latest-posts__post-wrapper .post__info {
+  color: #818181;
+  font-size: 15px;
+  line-height: 25px;
+}
+.blog__content .blog-post__head .info .long::before, .latest-posts__post-wrapper .post__info .long::before, .blog__content .blog-post__head .info .long::after, .latest-posts__post-wrapper .post__info .long::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  line-height: 25px;
+  background-color: #818181;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}
+.blog__content .blog-post__head .info .comments::before, .latest-posts__post-wrapper .post__info .comments::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 8px;
+  background-image: url("../img/svg/a-icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog__content .blog-post__head .info .rating, .latest-posts__post-wrapper .post__info .rating {
+  display: inline-flex;
+  margin-left: 10px;
+}
+.blog__content .blog-post__head .info .rating__star, .latest-posts__post-wrapper .post__info .rating__star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-image: url("../img/svg/Star-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post__head .info .rating__star--half_filled, .latest-posts__post-wrapper .post__info .rating__star--half_filled {
+  background-image: url("../img/svg/Star-2.svg");
+}
+.blog__content .blog-post__head .info .rating__star--empty, .latest-posts__post-wrapper .post__info .rating__star--empty {
+  background-image: url("../img/svg/Star-3.svg");
+}
+
+@media (max-width: 991px) {
+  .about-us__sub-title, .latest-posts__sub-title, .latest-portfolio__sub-title, .contact-us__sub-title {
+    margin: 25px auto 30px;
+  }
+
+  .about-us, .latest-posts, .latest-portfolio, .testimonials, .contact-us {
+    padding-top: 40px;
+  }
+}
+.blog {
+  margin-top: 43px;
+}
+.blog__content .blog-post {
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  background-color: #fcf6f6;
+}
+.blog__content .blog-post::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 84px;
+  height: 76px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-image: url("../img/svg/a-icon-text.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog__content .blog-post--image::after {
+  background-image: url("../img/svg/a-icon-picture.svg");
+}
+.blog__content .blog-post--video::after {
+  background-image: url("../img/svg/a-icon-playmini.svg");
+}
+.blog__content .blog-post--music::after {
+  background-image: url("../img/svg/a-icon-melody.svg");
+}
+.blog__content .blog-post:not(:last-child) {
+  margin-bottom: 45px;
+}
+.blog__content .blog-post__preview {
+  position: relative;
+  width: 560px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.blog__content .blog-post__preview .player {
+  height: 380px;
+}
+.blog__content .blog-post__preview .play {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background-image: url("../img/svg/a-icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog__content .blog-post__detail {
+  flex: 1;
+  padding: 27px 100px 40px 25px;
+}
+.blog__content .blog-post__head {
+  clear: both;
+}
+.blog__content .blog-post__head .avatar {
+  float: left;
+  margin-right: 13px;
+}
+.blog__content .blog-post__head .title {
+  font-weight: 500;
+}
+.blog__content .blog-post__body {
+  margin-top: 40px;
+}
+.blog__content .blog-post__body .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.blog__content .blog-post__body .description {
+  margin-bottom: 30px;
+}
+.blog__read-more {
+  text-align: center;
+  margin: 55px 0 80px;
+}
+@media (max-width: 1199px) {
+  .blog__content .blog-post {
+    flex-direction: column-reverse;
+  }
+  .blog__content .blog-post__preview {
+    width: 100%;
+  }
+  .blog__content .blog-post__preview .player {
+    height: auto;
+  }
+  .blog__content .blog-post__preview .thumbnail {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .blog {
+    margin-top: 15px;
+  }
+  .blog__content .blog-post:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .blog__content .blog-post::after {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .blog__content .blog-post__detail {
+    padding: 15px;
+  }
+  .blog__read-more {
+    margin: 30px 0 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

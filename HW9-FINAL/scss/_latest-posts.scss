@@ -41,39 +41,8 @@
 
       &__info {
         margin-top: 20px;
-        color: $post-info-color;
-        font-size: 15px;
-        line-height: 25px;
 
-        .long {
-          &::before,
-          &::after {
-            content: "";
-            display: inline-block;
-            height: 3px;
-            width: 3px;
-            border-radius: 50%;
-            line-height: 25px;
-            background-color: $post-info-color;
-            margin: 0 8px;
-            position: relative;
-            top: -3px;
-          }
-        }
-
-        .comments {
-          &::before {
-            content: "";
-            display: inline-block;
-            height: 13px;
-            width: 14px;
-            margin-right: 8px;
-            background-image: url("../img/svg/a-icon-comment.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          }
-        }
+        @extend %post-info;
       }
     }
   }

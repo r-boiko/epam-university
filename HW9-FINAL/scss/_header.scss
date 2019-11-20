@@ -3,11 +3,7 @@
 @import "grid";
 
 .header {
-  padding: 25px 0 205px;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 25px 0;
 
   &__logo {
     @include make-sm-column(3);
@@ -44,7 +40,8 @@
         color: $menu-item-primary;
 
         &:hover,
-        &:active {
+        &:active,
+        &.active {
           color: $menu-item-effect;
           text-decoration: underline;
         }
@@ -53,6 +50,7 @@
   }
 
   &__info {
+    display: none;
     margin-top: 95px;
 
     .title {
@@ -93,6 +91,29 @@
           }
         }
       }
+    }
+
+    &__info {
+      margin-top: 40px;
+    }
+  }
+}
+
+.home {
+  .header {
+    padding: 25px 0 205px;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__info {
+      display: block;
+    }
+
+    // media
+    @media (max-width: 767px) {
+      padding: 25px 0 40px;
     }
   }
 }
