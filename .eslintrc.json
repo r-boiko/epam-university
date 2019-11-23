@@ -12,13 +12,13 @@
     "jest": true
   },
   "rules": {
-    "no-console":
-    [
-      "error",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
+//    "no-console":
+//    [
+//      "error",
+//      {
+//        "allow": ["warn", "error"]
+//      }
+//    ],
     "dot-notation": "error",
     "dot-location": [
       "error",
@@ -102,7 +102,7 @@
       }
     ],
     "no-negated-condition": "error",
-    "no-nested-ternary": "error",
+//    "no-nested-ternary": "error",
     "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-unneeded-ternary": "error",
@@ -166,7 +166,7 @@
     "no-var": "error",
     "object-shorthand": "error",
     "prefer-arrow-callback": "error",
-    "prefer-const": "error",
+//    "prefer-const": "error",
     "prefer-template": "error",
     "rest-spread-spacing": "error",
     "template-curly-spacing": [
