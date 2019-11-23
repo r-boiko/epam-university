@@ -4,7 +4,6 @@
 
 .widgets {
   @include make-lg-column(5);
-  @include make-md-column(6);
 
   margin-top: 215px;
 

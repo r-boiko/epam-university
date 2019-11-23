@@ -9677,22 +9677,12 @@ hr {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-top: 25px;
 }
 @media (min-width: 1200px) {
   .single-post-wrapper {
     float: left;
     width: 58.3333333333%;
-  }
-}
-@media (min-width: 992px) {
-  .single-post-wrapper {
-    float: left;
-    width: 50%;
   }
 }
 .single-post-wrapper .single-post__title {
@@ -9718,7 +9708,7 @@ hr {
 }
 .single-post-wrapper .single-post__body .content blockquote {
   max-width: 500px;
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 15px 0 15px 30px;
   border-left: 5px solid #e6e6e6;
 }
@@ -11033,22 +11023,12 @@ hr {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-top: 215px;
 }
 @media (min-width: 1200px) {
   .widgets {
     float: left;
     width: 41.6666666667%;
-  }
-}
-@media (min-width: 992px) {
-  .widgets {
-    float: left;
-    width: 50%;
   }
 }
 .widgets .widget {
