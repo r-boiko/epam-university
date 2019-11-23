@@ -35,6 +35,22 @@
   }
 }
 
+%secondary-title {
+  color: $primary-text-color;
+  font-family: $font-hind;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+%small-title {
+  color: $primary-text-color;
+  font-family: $font-hind;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 39px;
+}
+
 %default-sub-title {
   color: $primary-text-color;
   font-family: $font-hind;

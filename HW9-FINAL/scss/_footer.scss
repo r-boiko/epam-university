@@ -84,3 +84,9 @@
     }
   }
 }
+
+body:not(.home) {
+  .footer {
+    margin-top: 80px;
+  }
+}

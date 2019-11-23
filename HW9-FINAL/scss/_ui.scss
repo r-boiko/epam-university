@@ -1,6 +1,7 @@
 @import "color-matrix";
 
 .btn {
+  width: max-content;
   cursor: pointer;
   text-decoration: none;
   display: inline-table;
@@ -33,5 +34,10 @@
       background-color: transparent;
       color: $btn-primary-color;
     }
+  }
+
+  &--tag {
+    padding: 5px 10px;
+    margin: 0 15px 15px 0;
   }
 }
