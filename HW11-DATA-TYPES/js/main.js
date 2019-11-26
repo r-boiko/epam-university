@@ -34,7 +34,7 @@ function isAllowLength(value) {
 }
 
 function isCorrectFirstSymbol(value) {
-  if ((Number.isNaN(Number(value.charAt(0))) === false || value.charAt(0).toLocaleLowerCase() === value.charAt(0).toLocaleUpperCase())) {
+  if ((Number.isNaN(Number(value.charAt(0))) === false || value.charAt(0).toLowerCase() === value.charAt(0).toUpperCase())) {
     return false;
   } else if (value.charAt(0) === value.charAt(0).toLocaleUpperCase()) {
     return true;
