@@ -6,10 +6,14 @@ import homeData from './data/home.js';
 // import templates
 import homeTemplate from './tempates/home.js';
 
+// variables
+const root = document.getElementById('root');
+
+// functions
 function renderSection(func, data) {
   const element = document.createElement('div');
   element.innerHTML = func(data);
-  document.querySelector('body').append(element);
+  root.append(element);
 }
 
 function renderSectionItems(selector, func, data) {
@@ -17,10 +21,13 @@ function renderSectionItems(selector, func, data) {
   data.forEach((item) => {
     element.insertAdjacentHTML('beforeend', func(item));
   });
-  document.querySelector(selector).append(element);
+  root.querySelector(selector).append(element);
 }
 
+// init
 if (document.querySelector('.home')) {
-  renderSection(homeTemplate.main, homeData.aboutUs);
-  renderSectionItems('.about-us__items', homeTemplate.item, homeData.aboutUs.items);
+  const {aboutUs} = homeData;
+
+  renderSection(homeTemplate.main, aboutUs);
+  renderSectionItems('.about-us__items', homeTemplate.item, aboutUs.items);
 }
