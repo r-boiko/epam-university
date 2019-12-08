@@ -7,7 +7,12 @@ import homeData from './data/home.js';
 import homeTemplate from './tempates/home.js';
 
 // variables
-const root = document.getElementById('root');
+const selectors = {
+  root: 'root',
+  home: '.home',
+  aboutUsItems: '.about-us__items',
+};
+const root = document.getElementById(selectors.root);
 
 // functions
 function renderSection(func, data) {
@@ -25,9 +30,9 @@ function renderSectionItems(selector, func, data) {
 }
 
 // init
-if (document.querySelector('.home')) {
+if (document.querySelector(selectors.home)) {
   const {aboutUs} = homeData;
 
   renderSection(homeTemplate.main, aboutUs);
-  renderSectionItems('.about-us__items', homeTemplate.item, aboutUs.items);
+  renderSectionItems(selectors.aboutUsItems, homeTemplate.item, aboutUs.items);
 }
