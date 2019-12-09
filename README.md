@@ -9,3 +9,7 @@ By default, this repo includes the following tools:
 * [HTMLLint](https://github.com/htmllint/htmllint-cli) with standart config and some fixes
 * [lint-staged](https://github.com/okonet/lint-staged)
 * [Husky](https://github.com/typicode/husky)
+
+# Info about project
+
+Need http://localhost, use IDE server to view
