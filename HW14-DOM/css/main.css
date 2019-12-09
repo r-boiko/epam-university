@@ -2741,18 +2741,18 @@ hr {
   }
 }
 
-.home .header {
+.home-page .header {
   padding: 25px 0 205px;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.home .header__info {
+.home-page .header__info {
   display: block;
 }
 @media (max-width: 767px) {
-  .home .header {
+  .home-page .header {
     padding: 25px 0 40px;
   }
 }

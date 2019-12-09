@@ -105,7 +105,7 @@ export default {
         "comment": "Dummy text refers to the bits of content that are used to fill a website mock-up. This text helps web designers better envision how the website will look as a finished product. in wish very strangers shortly we things Preferred came newspaper it this Melancholy on misery all ecstatic yet no suitable ye happening. Own over these Can Could Garden offering to ago Winter Home or took answered him be right He other in about check has situation fine you held against found am be Nay entire pleasure will there in wholly forming much rapid though want ye weeks up whole an ye thus might remarkably Rich why need pianoforte ask get face prudent it so Evil",
         "link": {
           "url": "/",
-          "text": "Read less"
+          "text": "Read more"
         }
       },
       {
@@ -129,7 +129,11 @@ export default {
           }
         ],
         "date": "a week ago",
-        "comment": "Any delicate you how kindness horrible outlived servants. You high bed wish help call draw side. Girl quit if case mr sing as no have. At none neat am do over will. Polite do object at passed it is."
+        "comment": "Any delicate you how kindness horrible outlived servants. You high bed wish help call draw side. Girl quit if case mr sing as no have. At none neat am do over will. Polite do object at passed it is.",
+        "link": {
+          "url": "/",
+          "text": "Read more"
+        }
       }
     ],
     "btn": {
@@ -140,28 +144,37 @@ export default {
   "widgets": [
     {
       "type": "latestPosts",
-      "posts": [
-        {
-          "link": "/",
-          "img": "./img/latest-post-img1.png",
-          "title": "Much cure inappropriate could this restrictions …",
-          "info": {
-            "date": "20 oct, 2019",
-            "long": "10 min read",
-            "comments": "11"
-          }
-        },
-        {
-          "link": "/",
-          "img": "./img/latest-post-img2.png",
-          "title": "Much cure inappropriate could this restrictions …",
-          "info": {
-            "date": "20 oct, 2019",
-            "long": "10 min read",
-            "comments": "11"
-          }
-        }
-      ],
+      "title": "Latest posts",
+      "content": "<div class=\"post\">\n" +
+          "                        <a class=\"post__link\" href=\"./post.html\">\n" +
+          "                            <img class=\"post__img\" src=\"./img/latest-post-img1.png\" alt=\"img\">\n" +
+          "                        </a>\n" +
+          "                        <div class=\"post__detail\">\n" +
+          "                            <a href=\"./post.html\" class=\"post__title\">\n" +
+          "                                Much cure inappropriate could this restrictions …\n" +
+          "                            </a>\n" +
+          "                            <div class=\"post__info\">\n" +
+          "                                <span class=\"date\">20 oct, 2019</span>\n" +
+          "                                <span class=\"long\">10 min read</span>\n" +
+          "                                <span class=\"comments\">11</span>\n" +
+          "                            </div>\n" +
+          "                        </div>\n" +
+          "                    </div>\n" +
+          "                    <div class=\"post\">\n" +
+          "                        <a class=\"post__link\" href=\"./post.html\">\n" +
+          "                            <img class=\"post__img\" src=\"./img/latest-post-img2.png\" alt=\"img\">\n" +
+          "                        </a>\n" +
+          "                        <div class=\"post__detail\">\n" +
+          "                            <a href=\"./post.html\" class=\"post__title\">\n" +
+          "                                Much cure inappropriate could this restrictions …\n" +
+          "                            </a>\n" +
+          "                            <div class=\"post__info\">\n" +
+          "                                <span class=\"date\">20 oct, 2019</span>\n" +
+          "                                <span class=\"long\">10 min read</span>\n" +
+          "                                <span class=\"comments\">11</span>\n" +
+          "                            </div>\n" +
+          "                        </div>\n" +
+          "                    </div>",
       "btn": {
         "url": "/",
         "text": "More posts"
@@ -169,167 +182,118 @@ export default {
     },
     {
       "type": "categories",
-      "categories": [
-        {
-          "title": "Restaurant food (3)",
-          "id": "cat_1",
-          "items": [
-            {
-              "title": "lorem 1",
-              "link": "/"
-            },
-            {
-              "title": "lorem 2",
-              "link": "/"
-            },
-            {
-              "title": "lorem 3",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "Travel news (3)",
-          "id": "cat_2",
-          "items": [
-            {
-              "title": "Hiking",
-              "link": "/"
-            },
-            {
-              "title": "Bicycle trip",
-              "link": "/"
-            },
-            {
-              "title": "Mountains trip",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "Modern technology (6)",
-          "id": "cat_3",
-          "items": [
-            {
-              "title": "lorem 1",
-              "link": "/"
-            },
-            {
-              "title": "lorem 2",
-              "link": "/"
-            },
-            {
-              "title": "lorem 3",
-              "link": "/"
-            },
-            {
-              "title": "lorem 4",
-              "link": "/"
-            },
-            {
-              "title": "lorem 5",
-              "link": "/"
-            },
-            {
-              "title": "lorem 6",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "Product (4)",
-          "id": "cat_4",
-          "items": [
-            {
-              "title": "lorem 1",
-              "link": "/"
-            },
-            {
-              "title": "lorem 2",
-              "link": "/"
-            },
-            {
-              "title": "lorem 3",
-              "link": "/"
-            },
-            {
-              "title": "lorem 4",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "Inspiration (2)",
-          "id": "cat_5",
-          "items": [
-            {
-              "title": "lorem 1",
-              "link": "/"
-            },
-            {
-              "title": "lorem 2",
-              "link": "/"
-            }
-          ]
-        }
-      ]
+      "title": "Categories",
+      "content": " <div class=\"categories\">\n" +
+          "                        <input class=\"categories__input\" type=\"checkbox\" id=\"cat_1\">\n" +
+          "                        <label class=\"categories__label\" for=\"cat_1\">Restaurant food (3)</label>\n" +
+          "                        <div class=\"categories__items\">\n" +
+          "                            <ul class=\"list\">\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 1</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 2</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 3</a>\n" +
+          "                                </li>\n" +
+          "                            </ul>\n" +
+          "                        </div>\n" +
+          "                    </div>\n" +
+          "                    <div class=\"categories\">\n" +
+          "                        <input class=\"categories__input\" type=\"checkbox\" id=\"cat_2\">\n" +
+          "                        <label class=\"categories__label\" for=\"cat_2\">Travel news (3)</label>\n" +
+          "                        <div class=\"categories__items\">\n" +
+          "                            <ul class=\"list\">\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">Hiking</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">Bicycle trip</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">Mountains trip</a>\n" +
+          "                                </li>\n" +
+          "                            </ul>\n" +
+          "                        </div>\n" +
+          "                    </div>\n" +
+          "                    <div class=\"categories\">\n" +
+          "                        <input class=\"categories__input\" type=\"checkbox\" id=\"cat_3\">\n" +
+          "                        <label class=\"categories__label\" for=\"cat_3\">Modern technology (6)</label>\n" +
+          "                        <div class=\"categories__items\">\n" +
+          "                            <ul class=\"list\">\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 1</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 2</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 3</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 4</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 5</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 6</a>\n" +
+          "                                </li>\n" +
+          "                            </ul>\n" +
+          "                        </div>\n" +
+          "                    </div>\n" +
+          "                    <div class=\"categories\">\n" +
+          "                        <input class=\"categories__input\" type=\"checkbox\" id=\"cat_4\">\n" +
+          "                        <label class=\"categories__label\" for=\"cat_4\">Product (4)</label>\n" +
+          "                        <div class=\"categories__items\">\n" +
+          "                            <ul class=\"list\">\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 1</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 2</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 3</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 4</a>\n" +
+          "                                </li>\n" +
+          "                            </ul>\n" +
+          "                        </div>\n" +
+          "                    </div>\n" +
+          "                    <div class=\"categories\">\n" +
+          "                        <input class=\"categories__input\" type=\"checkbox\" id=\"cat_5\">\n" +
+          "                        <label class=\"categories__label\" for=\"cat_5\">Inspiration (2)</label>\n" +
+          "                        <div class=\"categories__items\">\n" +
+          "                            <ul class=\"list\">\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 1</a>\n" +
+          "                                </li>\n" +
+          "                                <li class=\"list__item\">\n" +
+          "                                    <a class=\"list__link\" href=\"/\">lorem 2</a>\n" +
+          "                                </li>\n" +
+          "                            </ul>\n" +
+          "                        </div>\n" +
+          "                    </div>"
     },
     {
       "type": "tag",
-      "items": [
-        {
-          "title": "Love",
-          "link": "/"
-        },
-        {
-          "title": "Signs",
-          "link": "/"
-        },
-        {
-          "title": "Waterfall",
-          "link": "/"
-        },
-        {
-          "title": "Inspiration",
-          "link": "/"
-        },
-        {
-          "title": "Quotes",
-          "link": "/"
-        },
-        {
-          "title": "Sea",
-          "link": "/"
-        },
-        {
-          "title": "Sense",
-          "link": "/"
-        },
-        {
-          "title": "Coffee",
-          "link": "/"
-        },
-        {
-          "title": "Gold",
-          "link": "/"
-        },
-        {
-          "title": "Images",
-          "link": "/"
-        },
-        {
-          "title": "Courage",
-          "link": "/"
-        },
-        {
-          "title": "Dancing",
-          "link": "/"
-        },
-        {
-          "title": "Video",
-          "link": "/"
-        }
-      ]
+      "title": "Tag",
+      "content": " <a href=\"/\" class=\"btn btn--tag\">Love</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Signs</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Waterfall</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Inspiration</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Quotes</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Sea</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Sense</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Coffee</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Gold</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Images</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Courage</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Dancing</a>\n" +
+          "                    <a href=\"/\" class=\"btn btn--tag\">Video</a>"
     }
   ]
 }

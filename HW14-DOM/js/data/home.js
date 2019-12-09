@@ -28,7 +28,7 @@ export default {
   "latestPosts": {
     "title": "Latest posts",
     "subTitle": "Information is a source of learning. But unless it is organized, processed and available to the right people",
-    "posts": [
+    "items": [
       {
         "link": "/",
         "img": "./img/img-post-1.png",
@@ -67,7 +67,7 @@ export default {
   "latestPortfolio": {
     "title": "Latest portfolio",
     "subTitle": "Put there articles successfully special warrant submit agree what along then",
-    "slides": [
+    "items": [
       {
         "link": "/",
         "img": "./img/portfolio-bg-img-1.png",
@@ -94,7 +94,7 @@ export default {
   },
   "testimonials": {
     "title": "Testimonials",
-    "slides": [
+    "items": [
       {
         "img": "./img/testimonial-user-1.png",
         "author": {
@@ -105,7 +105,7 @@ export default {
       }
     ]
   },
-  "contact-us": {
+  "contactUs": {
     "title": "Contact us",
     "subTitle": "Put there articles successfully special warrant submit agree what along then",
     "socials": [
@@ -126,14 +126,17 @@ export default {
       "title": "What will be next step?",
       "items": [
         {
+          "number": "1",
           "title": "We’ll prepare a proposal",
           "description": "Required scope, timeline and apr. price will be included if you provide us with detail information about a project."
         },
         {
+          "number": "2",
           "title": "Together we discuss it",
           "description": "Let’s get acquainted and discuss all the possible variant and options. Google Hangouts or Skype usually wirks great."
         },
         {
+          "number": "3",
           "title": "Let’s start building",
           "description": "When the contract is signed and all goals are set we can start the first sprint."
         }

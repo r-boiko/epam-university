@@ -5,7 +5,7 @@ export default {
     "search": {
       "placeholder": "Search by author"
     },
-    "posts": [
+    "items": [
       {
         "type": "video",
         "preview": {
@@ -27,7 +27,7 @@ export default {
                 "state": "fill"
               },
               {
-                "state": "halfFilled"
+                "state": "half_filled"
               },
               {
                 "state": "empty"
