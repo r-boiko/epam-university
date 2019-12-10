@@ -22,9 +22,9 @@ function renderSection(func, data, selector) {
   const element = document.createElement('div');
   element.innerHTML = func(data);
   if (selector) {
-    document.querySelector(selector).append(element);
+    document.querySelector(selector).insertAdjacentHTML('beforeend', element.innerHTML);
   } else {
-    root.append(element);
+    root.insertAdjacentHTML('beforeend', element.innerHTML);
   }
 }
 
@@ -33,7 +33,7 @@ function renderSectionItems(selector, func, data) {
   data.forEach((item) => {
     element.insertAdjacentHTML('beforeend', func(item));
   });
-  root.querySelector(selector).append(element);
+  root.querySelector(selector).insertAdjacentHTML('beforeend', element.innerHTML);
 }
 
 // init
