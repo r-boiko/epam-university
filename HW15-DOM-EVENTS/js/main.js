@@ -17,6 +17,9 @@ const selectors = {
   home: '.home-page',
   blog: '.blog-page',
   post: '.post-page',
+  sliders: {
+    portfolio: '.latest-portfolio__slider',
+  },
 };
 const root = document.getElementById(selectors.root);
 
@@ -75,7 +78,7 @@ if (document.querySelector(selectors.post)) {
 }
 
 // init slider
-if (document.querySelector('.latest-portfolio__slider')) {
-  const slider = new Slider('.latest-portfolio__slider');
+if (document.querySelector(selectors.sliders.portfolio)) {
+  const slider = new Slider(selectors.sliders.portfolio);
   slider.init();
 }
