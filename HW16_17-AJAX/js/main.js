@@ -72,17 +72,16 @@ if (document.querySelector(selectors.blog)) {
     renderSection(blogTemplate[item].main, blogData[item]);
     renderSectionItems(blogTemplate[item].selector, blogTemplate[item].item, blogData[item].items);
 
-    const latestPostID = localStorage.getItem('latestPostID');
-    if (latestPostID) {
-      const api = 'http://localhost:3000/';
-      const articlesListQuery = 'api/list';
-      const response = fetch(api + articlesListQuery, {
-        method: 'GET',
-      });
-      response.then((data) => data.json()).then((data) => {
+    const api = 'http://localhost:3000/';
+    const articlesListQuery = 'api/list';
+    const response = fetch(api + articlesListQuery, {
+      method: 'GET',
+    });
+    response.then((data) => data.json()).then((data) => {
+      if (data.length > 0) {
         renderSectionItems(blogTemplate[item].selector, blogTemplate[item].item, data);
-      });
-    }
+      }
+    });
   });
 }
 if (document.querySelector(selectors.post)) {
