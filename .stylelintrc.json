@@ -5,5 +5,5 @@
       "ignoreAtRules": ["extend", "at-root", "debug", "warn", "error", "if", "else", "for", "each", "while", "mixin", "include", "content", "return", "function"]
     }]
   },
-  "ignoreFiles": "HW15-DOM-EVENTS/css/main.css"
+  "ignoreFiles": "HW16_17-AJAX/css/main.css"
 }
