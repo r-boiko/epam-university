@@ -126,16 +126,16 @@ modals.init();
 // ajax
 const createArticles = document.querySelector(selectors.forms.createArticle);
 if (createArticles) {
+  const date = new Date();
   createArticles.addEventListener('submit', (e) => {
     e.preventDefault();
     const formFields = {
-      date: new Date(),
       articleID: generateRandomID(),
       articleType: createArticles.querySelector('#article_type'),
       articleImage: createArticles.querySelector('#article_image'),
       articleAuthor: createArticles.querySelector('#article_author'),
       articleName: createArticles.querySelector('#article_name'),
-      articleDate: `${this.date.getFullYear()}.${this.date.getMonth() + 1}.${this.date.getDate()}`,
+      articleDate: `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}`,
       articleDescription: createArticles.querySelector('#article_description'),
     };
     if (validateTitle(formFields.articleName.value) === 'VALID') {
