@@ -12,4 +12,5 @@ By default, this repo includes the following tools:
 
 # Info about project
 
-Need http://localhost, use IDE server to view
+- Need http://localhost, use IDE server to view
+- Need server, run "npm start" in server folder

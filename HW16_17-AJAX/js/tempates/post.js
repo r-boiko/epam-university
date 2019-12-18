@@ -2,7 +2,147 @@ export default {
   post: {
     selector: '#post .socials',
     main: (data) => {
-      return `<div class="container" id="post">
+      if (data.id) {
+        switch (data.type) {
+          case 'video':
+            return `<h1 class="single-post__title">
+                        ${data.body.title}
+                    </h1>
+                    <div class="single-post__head">
+                        <img class="avatar" src="${data.head.avatar}" alt="img">
+                        <div class="title">${data.head.title}</div>
+                        <div class="info">
+                            <span class="date">${data.head.info.date}</span>
+                            <span class="long">${data.head.info.long}</span>
+                            <span class="comments">${data.head.info.comments}</span>
+                            <span class="rating">
+                                <span class="rating__star ${data.head.info.rating[0].state}"></span>
+                                <span class="rating__star ${data.head.info.rating[1].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[2].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[3].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[4].state}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="single-post__body">
+                         <video class="player single-post__thumbnail" src="${data.preview.src}" controls poster="${data.preview.poster}">
+                            Sorry, your browser doesn't support embedded videos,
+                            but don't worry, you can <a href="${data.preview.src}">download it</a>
+                            and watch it with your favorite video player!
+                        </video>
+                        <div class="content">${data.body.description}</div>
+                    </div>
+                    <div class="single-post__footer">
+                        <div class="likes">
+                            <span class="likes__icon"></span>
+                            <span class="likes__count">${data.footer.likes}</span>
+                            likes
+                        </div>
+                        <div class="socials"></div>
+                    </div>`;
+          case 'music':
+            return `<h1 class="single-post__title">
+                        ${data.body.title}
+                    </h1>
+                    <div class="single-post__head">
+                        <img class="avatar" src="${data.head.avatar}" alt="img">
+                        <div class="title">${data.head.title}</div>
+                        <div class="info">
+                            <span class="date">${data.head.info.date}</span>
+                            <span class="long">${data.head.info.long}</span>
+                            <span class="comments">${data.head.info.comments}</span>
+                            <span class="rating">
+                                <span class="rating__star ${data.head.info.rating[0].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[1].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[2].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[3].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[4].state}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <img class="single-post__thumbnail" src="${data.preview.poster}" alt="img">
+                    <div class="single-post__body">
+                        <audio class="audio-player" controls>
+                            <source src="${data.preview.src}" type="audio/mpeg">
+                            <p>Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+                                <a href="${data.preview.src}">ссылка на аудио</a></p>
+                        </audio>
+                        <div class="content">${data.body.description}</div>
+                    </div>
+                    <div class="single-post__footer">
+                        <div class="likes">
+                            <span class="likes__icon"></span>
+                            <span class="likes__count">${data.footer.likes}</span>
+                            likes
+                        </div>
+                        <div class="socials"></div>
+                    </div>`;
+          case 'image':
+            return `<h1 class="single-post__title">
+                        ${data.body.title}
+                    </h1>
+                    <div class="single-post__head">
+                        <img class="avatar" src="${data.head.avatar}" alt="img">
+                        <div class="title">${data.head.title}</div>
+                        <div class="info">
+                            <span class="date">${data.head.info.date}</span>
+                            <span class="long">${data.head.info.long}</span>
+                            <span class="comments">${data.head.info.comments}</span>
+                            <span class="rating">
+                                    <span class="rating__star ${data.head.info.rating[0].state}"></span>
+                                    <span class="rating__star ${data.head.info.rating[1].state}"></span>
+                                    <span class="rating__star rating__star--${data.head.info.rating[2].state}"></span>
+                                    <span class="rating__star rating__star--${data.head.info.rating[3].state}"></span>
+                                    <span class="rating__star rating__star--${data.head.info.rating[4].state}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <img class="single-post__thumbnail" src="${data.preview.poster}" alt="img">
+                    <div class="single-post__body">
+                        <div class="content">${data.body.description}</div>
+                    </div>
+                    <div class="single-post__footer">
+                        <div class="likes">
+                            <span class="likes__icon"></span>
+                            <span class="likes__count">${data.footer.likes}</span>
+                            likes
+                        </div>
+                        <div class="socials"></div>
+                    </div>`;
+          default:
+            return `<h1 class="single-post__title">
+                        ${data.body.title}
+                    </h1>
+                    <div class="single-post__head">
+                        <img class="avatar" src="${data.head.avatar}" alt="img">
+                        <div class="title">${data.head.title}</div>
+                        <div class="info">
+                            <span class="date">${data.head.info.date}</span>
+                            <span class="long">${data.head.info.long}</span>
+                            <span class="comments">${data.head.info.comments}</span>
+                            <span class="rating">
+                                <span class="rating__star ${data.head.info.rating[0].state}"></span>
+                                <span class="rating__star ${data.head.info.rating[1].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[2].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[3].state}"></span>
+                                <span class="rating__star rating__star--${data.head.info.rating[4].state}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="single-post__body">
+                        <div class="content">${data.body.description}</div>
+                    </div>
+                    <div class="single-post__footer">
+                        <div class="likes">
+                            <span class="likes__icon"></span>
+                            <span class="likes__count">${data.footer.likes}</span>
+                            likes
+                        </div>
+                        <div class="socials"></div>
+                    </div>`;
+        }
+      } else {
+        return `<div class="container" id="post">
                 <div class="row post-page-wrapper">
                     <div class="single-post-wrapper">
                         <main class="single-post">
@@ -45,6 +185,7 @@ export default {
                         </main>
                     </div>
             </div>`;
+      }
     },
     itemSocial: (data) => {
       return `<a href="${data.link}" class="link link--${data.title}"></a>`;

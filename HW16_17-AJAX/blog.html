@@ -31,6 +31,9 @@
                     <li class="menu__item">
                         <a class="menu__link" href="#contact-us">Contact</a>
                     </li>
+                    <li class="menu__item">
+                        <a class="menu__link toggleModal" href="" data-modal="create-article">Create article</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +72,54 @@
     </div>
     <a href="#up" class="up"></a>
 </footer>
+<div class="modal" data-modal-name="create-article">
+    <div class="modal__content">
+        <div class="form-wrapper">
+            <form class="form" action="/" id="create-article">
+                <div class="form__title">
+                    Create article
+                </div>
+                <div class="form__content">
+                    <div class="form__fields">
+                        <div class="fields-wrapper">
+                            <div class="field">
+                                <label class="field__label" for="article_type">Article type</label>
+                                <select class="field__input" name="article_type" id="article_type">
+                                    <option value="image">Image</option>
+                                    <option value="music">Music</option>
+                                    <option value="video">Video</option>
+                                    <option value="text">Text</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="article_image">Article image</label>
+                                <input class="field__input" type="text" name="article_image" id="article_image" placeholder="https://www.website.com/image">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="article_author">Article author</label>
+                                <input class="field__input" type="text" name="article_author" id="article_author" placeholder="Bill Gates">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="article_name">Article name</label>
+                                <input class="field__input" type="text" name="article_name" id="article_name" placeholder="Microsoft" required>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="article_description">Article description</label>
+                                <textarea class="field__textarea" name="article_description" id="article_description" placeholder="Since leaving day-to-day operations at Microsoft, Gates has continued his philanthropy and works on other projects." required></textarea>
+                            </div>
+                            <div class="field">
+                                <input class="field__submit btn btn--filled" type="submit" value="Create">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <strong>Attention!</strong> After created, you will be redirected to the article page.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <script type="module" src="./js/main.js"></script>
 </body>
 </html>

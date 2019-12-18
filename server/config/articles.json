@@ -1,8 +1,60 @@
 [
   {
-    "id": 1
-  },
-  {
-    "id": 2
+    "id": "1",
+    "type": "image",
+    "preview": {
+      "poster": "https://cdn.archilovers.com/projects/b_730_e55393b0-4076-40d8-8538-4c41f3f3c332.jpg"
+    },
+    "head": {
+      "avatar": "./img/blog-user-3.png",
+      "title": "Some author",
+      "info": {
+        "date": "2019.12.18",
+        "long": "16 min read",
+        "comments": "421",
+        "rating": [
+          {
+            "state": "fill"
+          },
+          {
+            "state": "fill"
+          },
+          {
+            "state": "empty"
+          },
+          {
+            "state": "empty"
+          },
+          {
+            "state": "empty"
+          }
+        ]
+      }
+    },
+    "body": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur, dicta doloribus dolorum, earum esse eveniet ex fugiat fugit id impedit in incidunt inventore molestias nesciunt nihil nostrum odit officiis porro provident quas, qui quia quis quisquam repellendus sint veritatis vitae.",
+      "link": {
+        "url": "post.html",
+        "text": "Read more"
+      }
+    },
+    "footer": {
+      "likes": "75",
+      "socials": [
+        {
+          "title": "facebook",
+          "link": "/"
+        },
+        {
+          "title": "dribbble",
+          "link": "/"
+        },
+        {
+          "title": "instagram",
+          "link": "/"
+        }
+      ]
+    }
   }
 ]
