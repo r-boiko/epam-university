@@ -5,5 +5,5 @@
       "ignoreAtRules": ["extend", "at-root", "debug", "warn", "error", "if", "else", "for", "each", "while", "mixin", "include", "content", "return", "function"]
     }]
   },
-  "ignoreFiles": "HW19-OOP-1/css/main.css"
+  "ignoreFiles": "HW20-OOP-2/css/main.css"
 }

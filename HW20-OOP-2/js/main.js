@@ -1,6 +1,7 @@
 // import modules
 import Slider, {CustomSlider} from './modules/sliderES5.js';
 import Modal from './modules/modal.js';
+import Post from './modules/post.js';
 import validateTitle from './modules/validateTitle.js';
 
 // import data
@@ -72,7 +73,8 @@ if (document.querySelector(selectors.home)) {
 if (document.querySelector(selectors.blog)) {
   Object.keys(blogData).forEach((item) => {
     renderSection(blogTemplate[item].main, blogData[item]);
-    renderSectionItems(blogTemplate[item].selector, blogTemplate[item].item, blogData[item].items);
+    const post = new Post(blogTemplate[item].item, blogData[item].items, blogTemplate[item].selector);
+    post.renderPostItems();
 
     const api = 'http://localhost:3000/';
     const articlesListQuery = 'api/list';
@@ -81,7 +83,8 @@ if (document.querySelector(selectors.blog)) {
     });
     response.then((data) => data.json()).then((data) => {
       if (data.length > 0) {
-        renderSectionItems(blogTemplate[item].selector, blogTemplate[item].item, data);
+        const post = new Post(blogTemplate[item].item, data, blogTemplate[item].selector);
+        post.renderPostItems();
       }
     });
   });
@@ -101,7 +104,8 @@ if (document.querySelector(selectors.post)) {
         });
         response.then((data) => data.json()).then((data) => {
           document.querySelector(selectors.singlePostWrapper).innerHTML = '';
-          renderSection(postTemplate[item].main, data, selectors.singlePostWrapper);
+          const post = new Post(postTemplate[item].main, data, selectors.singlePostWrapper);
+          post.renderPost();
         });
       }
     } else if (item === 'reviews') {
