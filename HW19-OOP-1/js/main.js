@@ -1,5 +1,5 @@
 // import modules
-import Slider from './modules/slider.js';
+import Slider, {CustomSlider} from './modules/sliderES5.js';
 import Modal from './modules/modal.js';
 import validateTitle from './modules/validateTitle.js';
 
@@ -23,6 +23,8 @@ const selectors = {
   singlePostWrapper: '.single-post',
   sliders: {
     portfolio: '.latest-portfolio__slider',
+    latestPosts: '.latest-posts__slider',
+    testimonials: '.testimonials__slider',
   },
   forms: {
     createArticle: '#create-article',
@@ -117,6 +119,14 @@ if (document.querySelector(selectors.sliders.portfolio)) {
   const slider = new Slider(selectors.sliders.portfolio);
   slider.init();
 }
+if (document.querySelector(selectors.sliders.latestPosts)) {
+  const slider = new Slider(selectors.sliders.latestPosts, false, 1000);
+  slider.init();
+}
+if (document.querySelector(selectors.sliders.testimonials)) {
+  const slider = new CustomSlider(selectors.sliders.testimonials, false, 1000);
+  slider.init();
+}
 
 // init modals
 const modals = new Modal();
@@ -149,7 +159,15 @@ if (createArticles) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(articleTemplate.main(formFields.articleID, formFields.articleType.value, formFields.articleImage.value, formFields.articleName.value, formFields.articleAuthor.value, formFields.articleDate, formFields.articleDescription.value)),
+        body: JSON.stringify(articleTemplate.main(
+          formFields.articleID,
+          formFields.articleType.value,
+          formFields.articleImage.value,
+          formFields.articleName.value,
+          formFields.articleAuthor.value,
+          formFields.articleDate,
+          formFields.articleDescription.value
+        )),
       });
       response.then((data) => data.json()).then((data) => data);
 
