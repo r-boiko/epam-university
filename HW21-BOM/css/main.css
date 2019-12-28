@@ -8270,6 +8270,11 @@ audio {
   margin-top: 80px;
 }
 
+.search-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search {
   width: 320px;
   max-width: 100%;
@@ -8278,6 +8283,9 @@ audio {
   border: 1px solid #4d4949;
   border-radius: 5px;
   margin: 65px 0 30px;
+}
+.search:first-child {
+  margin-right: 5px;
 }
 .search__input {
   width: 100%;
@@ -8302,10 +8310,6 @@ audio {
   background-color: transparent;
   border: 0;
   outline: none;
-}
-.search--right {
-  margin-left: 100%;
-  transform: translateX(-100%);
 }
 
 .blog__title, .about-us__title, .latest-posts__title, .latest-portfolio__title, .testimonials__title, .contact-us__title {
