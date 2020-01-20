@@ -22,7 +22,6 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
         delete: 'delete',
         lock: 'lock',
       },
-      isModalInit: false,
       templates: {
         primary: `<div class="modal" data-modal="jQueryModal">
   <div class="modal__content">
@@ -93,8 +92,6 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
           }, 300);
         }
       }
-
-      privateSettings.isModalInit = false;
     };
 
     const checkElement = (e, element) => !element.is(e.target) && element.has(e.target).length === 0 || $(e.target).is(`.${classes.close}`) || $(e.target).is(`.${classes.delete}`);
@@ -102,7 +99,6 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
     const actions = (index, element) => {
       if (settings.autoShow) {
         setTimeout(() => {
-          privateSettings.isModalInit = false;
           initModal();
         }, 10000);
       } else {
