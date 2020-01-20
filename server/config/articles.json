@@ -38,6 +38,9 @@
       "link": {
         "url": "post.html",
         "text": "Read more"
+      },
+      "deleteBtn": {
+        "text": "Delete post"
       }
     },
     "footer": {
@@ -97,6 +100,9 @@
       "link": {
         "url": "post.html",
         "text": "Read more"
+      },
+      "deleteBtn": {
+        "text": "Delete post"
       }
     },
     "footer": {
@@ -155,6 +161,9 @@
       "link": {
         "url": "post.html",
         "text": "Read more"
+      },
+      "deleteBtn": {
+        "text": "Delete post"
       }
     },
     "footer": {
@@ -210,6 +219,9 @@
       "link": {
         "url": "post.html",
         "text": "Read more"
+      },
+      "deleteBtn": {
+        "text": "Delete post"
       }
     },
     "footer": {
