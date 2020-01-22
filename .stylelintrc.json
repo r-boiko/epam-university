@@ -5,5 +5,5 @@
       "ignoreAtRules": ["extend", "at-root", "debug", "warn", "error", "if", "else", "for", "each", "while", "mixin", "include", "content", "return", "function"]
     }]
   },
-  "ignoreFiles": "HW22-JQUERY/css/main.css"
+  "ignoreFiles": "src/css/main.css"
 }

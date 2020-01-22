@@ -15,43 +15,36 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
         name: 'jQueryModal',
       },
       classes: {
-        modal: 'modal',
         content: 'modal__content',
         close: 'close',
         show: 'show',
         delete: 'delete',
         lock: 'lock',
       },
-      templates: {
-        primary: `<div class="modal" data-modal="jQueryModal">
-  <div class="modal__content">
-  <span class="modal__close close">X</span>
-  <h2 class="modal__title">${settings.message}</h2>
-  <input class="field__submit btn close" type="submit" value="Ok">
-  </div>
-</div>`,
-        secondary: `<div class="modal" data-modal="jQueryModal">
-  <div class="modal__content">
-  <span class="modal__close close">X</span>
-  <h2 class="modal__title">${settings.message}</h2>
-  <input class="field__submit btn btn--filled close" type="submit" value="Cancel">
-  <input class="field__submit btn delete" type="submit" value="Ok">
-  </div>
-</div>`,
-      },
     };
-    const {selectors, classes, templates} = privateSettings;
+    const {selectors, classes} = privateSettings;
+
+    const getButtons = () => {
+      return settings.buttons === 1
+        ? '<input class="field__submit btn close" type="submit" value="Ok">'
+        : `<input class="field__submit btn btn--filled close" type="submit" value="Cancel">
+           <input class="field__submit btn delete" type="submit" value="Ok">`;
+    };
+
+    const getTemplate = () => `<div class="modal" data-modal="jQueryModal">
+          <div class="modal__content">
+          <span class="modal__close close">X</span>
+          <h2 class="modal__title">${settings.message}</h2>
+          ${getButtons()}
+          </div>
+        </div>`;
 
     const initModal = (e) => {
       if (e) {
         e.preventDefault();
         privateSettings.postID = e.target.dataset.id;
       }
-      if (settings.buttons === 1) {
-        $(selectors.body).append(templates.primary);
-      } else {
-        $(selectors.body).append(templates.secondary);
-      }
+      $(selectors.body).append(getTemplate());
       privateSettings.modal = $(`[data-modal="${selectors.name}"]`);
       setTimeout(() => {
         // show modal with animation
