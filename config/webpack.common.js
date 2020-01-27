@@ -5,14 +5,21 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const ROOT_DIR = path.resolve(__dirname, '../');
+const SRC_DIR = path.resolve(ROOT_DIR, 'src');
+const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
+
 module.exports = {
   entry: [
-    path.resolve(__dirname, 'src/js/main.js'),
-    path.resolve(__dirname, 'src/scss/main.scss'),
+    path.resolve(SRC_DIR, 'js/main.js'),
+    path.resolve(SRC_DIR, 'scss/main.scss'),
   ],
   output: {
     filename: 'js/bundle.min.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(DIST_DIR),
+  },
+  optimization: {
+    minimize: false,
   },
   module: {
     rules: [
@@ -55,16 +62,16 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, 'dist/index.html'),
-      template: path.resolve(__dirname, 'src/index.html'),
+      filename: path.resolve(DIST_DIR, 'index.html'),
+      template: path.resolve(SRC_DIR, 'index.html'),
     }),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, 'dist/blog.html'),
-      template: path.resolve(__dirname, 'src/blog.html'),
+      filename: path.resolve(DIST_DIR, 'blog.html'),
+      template: path.resolve(SRC_DIR, 'blog.html'),
     }),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, 'dist/post.html'),
-      template: path.resolve(__dirname, 'src/post.html'),
+      filename: path.resolve(DIST_DIR, 'post.html'),
+      template: path.resolve(SRC_DIR, 'post.html'),
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -72,30 +79,24 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/img'),
-        to: path.resolve(__dirname, 'dist/img'),
+        from: path.resolve(SRC_DIR, 'img'),
+        to: path.resolve(DIST_DIR, 'img'),
       },
       {
-        from: path.resolve(__dirname, 'src/fonts'),
-        to: path.resolve(__dirname, 'dist/fonts'),
+        from: path.resolve(SRC_DIR, 'fonts'),
+        to: path.resolve(DIST_DIR, 'fonts'),
       },
       {
-        from: path.resolve(__dirname, 'src/audio'),
-        to: path.resolve(__dirname, 'dist/audio'),
+        from: path.resolve(SRC_DIR, 'audio'),
+        to: path.resolve(DIST_DIR, 'audio'),
       },
       {
-        from: path.resolve(__dirname, 'src/video'),
-        to: path.resolve(__dirname, 'dist/video'),
+        from: path.resolve(SRC_DIR, 'video'),
+        to: path.resolve(DIST_DIR, 'video'),
       },
     ]),
     new MiniCssExtractPlugin({
       filename: 'css/bundle.min.css',
     }),
   ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-    open: true,
-  },
 };

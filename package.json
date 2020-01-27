@@ -5,8 +5,8 @@
   "description": "This repo exists for RD students needs",
   "main": "src/js/index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --mode=development",
-    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --progress --config=config/webpack.dev.js --mode=development",
+    "build": "webpack --progress --config=config/webpack.prod.js --mode=production",
     "test": "node ./node_modules/karma/bin/karma start",
     "lint-staged": "lint-staged"
   },
@@ -54,7 +54,8 @@
     "stylelint-config-standard": "^18.3.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "jquery": "^3.4.1"
