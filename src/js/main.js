@@ -43,9 +43,7 @@ const selectors = {
 };
 const api = {
   url: 'http://localhost:3000/',
-  articlesListQuery: 'api/list',
-  articleByIdQuery: 'api/list/',
-  createArticlesQuery: 'api/create-article',
+  query: 'api/articles/',
 };
 const root = document.getElementById(selectors.root);
 
@@ -150,7 +148,7 @@ if (document.querySelector(selectors.blog.page)) {
       const searchValueTitle = document.querySelector(selectors.blog.search.inputTitle).value;
       if (searchValueTitle.length > 0) {
         if (validateTitle(searchValueTitle)) {
-          const response = fetch(api.url + api.articlesListQuery, {
+          const response = fetch(api.url + api.query, {
             method: 'GET',
           });
           response.then((data) => data.json()).then((data) => {
@@ -176,7 +174,7 @@ if (document.querySelector(selectors.blog.page)) {
           alert('Incorrect format title');
         }
       } else {
-        const response = fetch(api.url + api.articlesListQuery, {
+        const response = fetch(api.url + api.query, {
           method: 'GET',
         });
         response.then((data) => data.json()).then((data) => {
@@ -201,7 +199,7 @@ if (document.querySelector(selectors.blog.page)) {
       }
     });
 
-    const response = fetch(api.url + api.articlesListQuery, {
+    const response = fetch(api.url + api.query, {
       method: 'GET',
     });
     response.then((data) => data.json()).then((data) => {
@@ -240,7 +238,7 @@ if (document.querySelector(selectors.post)) {
 
       const latestPostID = JSON.parse(localStorage.getItem('latestPostID'));
       if (latestPostID) {
-        const response = fetch(api.url + api.articleByIdQuery + latestPostID, {
+        const response = fetch(api.url + api.query + latestPostID, {
           method: 'GET',
         });
         response.then((data) => data.json()).then((data) => {
@@ -295,7 +293,7 @@ if (createArticles) {
     if (validateTitle(formFields.articleName.value)) {
       formFields.articleName.classList.remove('error');
 
-      const response = fetch(api.url + api.createArticlesQuery, {
+      const response = fetch(api.url + api.query, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
