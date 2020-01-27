@@ -6,6 +6,7 @@ const ROOT_DIR = path.resolve(__dirname, '../');
 const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 
 module.exports = merge(common, {
+  devtool: 'source-map',
   optimization: {
     minimize: false,
   },
