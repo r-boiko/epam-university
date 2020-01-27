@@ -29,10 +29,8 @@ router.route('/articles')
   })
   .put((req, res) =>  {
     log.info("==Put article by id==");
-    console.log(req.body, 'body');
     list = list.map(article => {
       if(+article.id === +req.body.id) {
-        console.log('yes');
         article.body.description = req.body.description;
       }
       return article;
