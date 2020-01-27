@@ -318,3 +318,6 @@ if (createArticles) {
     }
   });
 }
+
+// tests
+export const a = () => 1;
