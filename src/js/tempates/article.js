@@ -43,6 +43,9 @@ export default {
               url: 'post.html',
               text: 'Read more',
             },
+            deleteBtn: {
+              text: 'Delete post'
+            }
           },
           footer: {
             likes: '75',
@@ -103,6 +106,9 @@ export default {
               url: 'post.html',
               text: 'Read more',
             },
+            deleteBtn: {
+              text: 'Delete post'
+            }
           },
           footer: {
             likes: '75',
@@ -162,6 +168,9 @@ export default {
               url: 'post.html',
               text: 'Read more',
             },
+            deleteBtn: {
+              text: 'Delete post'
+            }
           },
           footer: {
             likes: '75',
@@ -218,6 +227,9 @@ export default {
               url: 'post.html',
               text: 'Read more',
             },
+            deleteBtn: {
+              text: 'Delete post'
+            }
           },
           footer: {
             likes: '75',
