@@ -51,23 +51,6 @@ paths:
                   $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
-    put:
-      tags:
-        - Articles
-      summary: put article
-      operationId: putArticle
-      description: put article
-      responses:
-        '201':
-          description: item created
-        '400':
-          description: 'invalid input, object invalid'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Article'
-        description: Article to put
     delete:
       tags:
         - Articles
@@ -105,6 +88,31 @@ paths:
                   $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
+    put:
+      tags:
+        - Articles
+      summary: put article by id
+      operationId: putArticle
+      parameters:
+        - name: id
+          in: path
+          description: ID of article to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      description: put article
+      responses:
+        '201':
+          description: item update
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+        description: Article to put
     delete:
       tags:
         - Articles
