@@ -7,6 +7,7 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
       type: 'info',
       buttons: 1,
       autoShow: false,
+      update: false,
     }, options);
 
     const privateSettings = {
@@ -19,25 +20,51 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
         close: 'close',
         show: 'show',
         delete: 'delete',
+        update: 'update',
         lock: 'lock',
       },
     };
     const {selectors, classes} = privateSettings;
 
     const getButtons = () => {
+      const buttonAction = settings.update ? classes.update : classes.delete;
       return settings.buttons === 1
         ? '<input class="field__submit btn close" type="submit" value="Ok">'
         : `<input class="field__submit btn btn--filled close" type="submit" value="Cancel">
-           <input class="field__submit btn delete" type="submit" value="Ok">`;
+           <input class="field__submit btn ${buttonAction}" type="submit" value="Ok">`;
     };
 
-    const getTemplate = () => `<div class="modal" data-modal="jQueryModal">
+    const getTemplate = () => {
+      return settings.update
+        ? `<div class="modal" data-modal="jQueryModal">
+          <div class="modal__content">
+          <span class="modal__close close">X</span>
+          <h2 class="modal__title">${settings.message}</h2>
+          <div class="form-wrapper">
+          <div class="form__fields no-padding">
+          <div class="field">
+            <label
+            class="field__label"
+            for="article_description_update">Article description</label>
+            <textarea
+            class="field__textarea"
+            name="article_description_update"
+            id="article_description_update"
+            placeholder="Since leaving day-to-day operations at Microsoft, Gates has continued his philanthropy and works on other projects." required></textarea>
+          </div>
+          </div>
+          </div>
+          ${getButtons()}
+          </div>
+        </div>`
+        : `<div class="modal" data-modal="jQueryModal">
           <div class="modal__content">
           <span class="modal__close close">X</span>
           <h2 class="modal__title">${settings.message}</h2>
           ${getButtons()}
           </div>
         </div>`;
+    };
 
     const initModal = (e) => {
       if (e) {
@@ -56,12 +83,29 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
         privateSettings.modal.on('click', closeModal);
         $(selectors.body).on('keyup', closeModal);
         $(`.${classes.delete}`).on('click', deletePost);
+        $(`.${classes.update}`).on('click', updatePost);
       }, 100);
     };
 
     const deletePost = () => {
-      // eslint-disable-next-line no-console
-      console.log(`Post: ${privateSettings.postID}, remove`);
+      $.ajax({
+        method: 'delete',
+        url: `http://localhost:3000/api/articles/${privateSettings.postID}`,
+      }).done(() => {
+        location.reload();
+      });
+    };
+
+    const updatePost = () => {
+      $.ajax({
+        method: 'put',
+        url: `http://localhost:3000/api/articles/${privateSettings.postID}`,
+        data: {
+          description: 'some',
+        },
+      }).done(() => {
+        location.reload();
+      });
     };
 
     const closeModal = (e) => {

@@ -72,12 +72,14 @@ function generateRandomID() {
 
 function redirect() {
   let pathname = location.pathname;
-  if (pathname.indexOf('index') > -1) {
-    pathname = pathname.replace('index', 'post');
+  if (pathname === '/') {
+    pathname += 'post.html';
+  } else if (pathname.indexOf('index') > -1) {
+    pathname = pathname.replace('index.html', 'post.html');
   } else if (pathname.indexOf('blog') > -1) {
-    pathname = pathname.replace('blog', 'post');
+    pathname = pathname.replace('blog.html', 'post.html');
   } else {
-    pathname = pathname.replace('post', 'post');
+    pathname = pathname.replace('post.html', 'post.html');
   }
   location.href = location.origin + pathname;
 }
@@ -165,6 +167,13 @@ if (document.querySelector(selectors.blog.page)) {
                   buttons: 2,
                   type: 'error',
                 });
+                // eslint-disable-next-line no-undef
+                $('.updatePost').jQueryModal({
+                  message: 'Update post',
+                  buttons: 2,
+                  type: 'error',
+                  update: true,
+                });
               } else {
                 alert('Sorry, not found any post');
               }
@@ -191,6 +200,13 @@ if (document.querySelector(selectors.blog.page)) {
                 buttons: 2,
                 type: 'error',
               });
+              // eslint-disable-next-line no-undef
+              $('.updatePost').jQueryModal({
+                message: 'Update post',
+                buttons: 2,
+                type: 'error',
+                update: true,
+              });
             } else {
               alert('Sorry, not found any post');
             }
@@ -216,6 +232,13 @@ if (document.querySelector(selectors.blog.page)) {
             buttons: 2,
             type: 'error',
           });
+          // eslint-disable-next-line no-undef
+          $('.updatePost').jQueryModal({
+            message: 'Update post',
+            buttons: 2,
+            type: 'error',
+            update: true,
+          });
         } else {
           renderBlogPosts(blogTemplate[item].item, data, blogTemplate[item].selector);
 
@@ -224,6 +247,13 @@ if (document.querySelector(selectors.blog.page)) {
             message: 'Are you sure you want to delete this post?',
             buttons: 2,
             type: 'error',
+          });
+          // eslint-disable-next-line no-undef
+          $('.updatePost').jQueryModal({
+            message: 'Update post',
+            buttons: 2,
+            type: 'error',
+            update: true,
           });
         }
       }
@@ -243,7 +273,7 @@ if (document.querySelector(selectors.post)) {
         });
         response.then((data) => data.json()).then((data) => {
           document.querySelector(selectors.singlePostWrapper).innerHTML = '';
-          const post = new Post(postTemplate[item].main, data, selectors.singlePostWrapper);
+          const post = new Post(postTemplate[item].main, data[0], selectors.singlePostWrapper);
           post.renderPost();
         });
       }

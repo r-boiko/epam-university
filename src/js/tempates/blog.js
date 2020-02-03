@@ -58,6 +58,7 @@ export default {
                             </div>
                             <a href="${data.body.link.url}" class="btn openPost" data-id=${data.id}>${data.body.link.text}</a>
                             <a href="/" class="btn btn--filled deletePost" data-id=${data.id}>${data.body.deleteBtn.text}</a>
+                            <a href="/" class="btn btn--filled updatePost" data-id=${data.id}>${data.body.updateBtn.text}</a>
                         </div>
                     </div>
                 </div>`;
@@ -95,6 +96,7 @@ export default {
                             </div>
                             <a href="${data.body.link.url}" class="btn openPost" data-id=${data.id}>${data.body.link.text}</a>
                             <a href="/" class="btn btn--filled deletePost" data-id=${data.id}>${data.body.deleteBtn.text}</a>
+                            <a href="/" class="btn btn--filled updatePost" data-id=${data.id}>${data.body.updateBtn.text}</a>
                         </div>
                     </div>
                 </div>`;
@@ -127,6 +129,7 @@ export default {
                             </div>
                             <a href="${data.body.link.url}" class="btn openPost" data-id=${data.id}>${data.body.link.text}</a>
                             <a href="/" class="btn btn--filled deletePost" data-id=${data.id}>${data.body.deleteBtn.text}</a>
+                            <a href="/" class="btn btn--filled updatePost" data-id=${data.id}>${data.body.updateBtn.text}</a>
                         </div>
                     </div>
                 </div>`;
@@ -156,6 +159,7 @@ export default {
                             </div>
                             <a href="${data.body.link.url}" class="btn openPost" data-id=${data.id}>${data.body.link.text}</a>
                             <a href="/" class="btn btn--filled deletePost" data-id=${data.id}>${data.body.deleteBtn.text}</a>
+                            <a href="/" class="btn btn--filled updatePost" data-id=${data.id}>${data.body.updateBtn.text}</a>
                         </div>
                     </div>
                 </div>`;

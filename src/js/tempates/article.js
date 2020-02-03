@@ -45,6 +45,9 @@ export default {
             },
             deleteBtn: {
               text: 'Delete post'
+            },
+            updateBtn: {
+              text: 'Update post'
             }
           },
           footer: {
@@ -108,6 +111,9 @@ export default {
             },
             deleteBtn: {
               text: 'Delete post'
+            },
+            updateBtn: {
+              text: 'Update post'
             }
           },
           footer: {
@@ -170,6 +176,9 @@ export default {
             },
             deleteBtn: {
               text: 'Delete post'
+            },
+            updateBtn: {
+              text: 'Update post'
             }
           },
           footer: {
@@ -229,6 +238,9 @@ export default {
             },
             deleteBtn: {
               text: 'Delete post'
+            },
+            updateBtn: {
+              text: 'Update post'
             }
           },
           footer: {

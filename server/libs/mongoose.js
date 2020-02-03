@@ -13,10 +13,39 @@ db.once('open', function callback () {
     log.info("Connected to DB!");
 });
 
-const Schema = mongoose.Schema;
-
-const User = new Schema({
-    name: { type: String, default : '' }
+let PostSchema = new mongoose.Schema({
+  id:{
+    type: String,
+    required: true
+  },
+  type:{
+    type: String,
+    required: true
+  },
+  preview:{
+    type: Object,
+    required: true
+  },
+  head:{
+    type: Object,
+    required: true
+  },
+  body:{
+    type: Object,
+    required: true
+  },
+  footer:{
+    type: Object,
+    required: true
+  },
 });
 
-module.exports.UserModel = mongoose.model('User', User);
+PostSchema.set('toJSON', {
+  virtuals: true,
+  versionKey:false,
+  transform: function (doc, ret) { delete ret._id }
+});
+
+let Article = mongoose.model('posts', PostSchema);
+
+module.exports.Article = Article;
