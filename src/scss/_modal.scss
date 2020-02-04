@@ -145,6 +145,10 @@
             text-decoration: underline;
           }
         }
+
+        &.no-padding {
+          padding: 0;
+        }
       }
     }
   }
