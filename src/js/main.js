@@ -81,7 +81,9 @@ function redirect() {
   } else {
     pathname = pathname.replace('post.html', 'post.html');
   }
-  location.href = location.origin + pathname;
+  setTimeout(() => {
+    location.href = location.origin + pathname;
+  }, 500);
 }
 
 function addEventForElements(selector, event, func) {
