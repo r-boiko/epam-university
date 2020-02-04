@@ -53,7 +53,8 @@ router.route('/articles/:id')
   })
   .put(async function (req, res) {
     log.info("==Put article by id==");
-    // const articleById = await ArticleModel.updateOne({id: req.params.id}, {body: req.body.description});
+    const [{body}] = await ArticleModel.find({id: req.params.id});
+    const articleById = await ArticleModel.updateOne({id: req.params.id}, {body: {...body, description: req.body.description}});
     res.send(JSON.stringify(articleById));
   })
   .delete(async function (req, res) {

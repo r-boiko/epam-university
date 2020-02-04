@@ -45,12 +45,12 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
           <div class="field">
             <label
             class="field__label"
-            for="article_description_update">Article description</label>
+            >Article description
             <textarea
             class="field__textarea"
             name="article_description_update"
-            id="article_description_update"
-            placeholder="Since leaving day-to-day operations at Microsoft, Gates has continued his philanthropy and works on other projects." required></textarea>
+            class="article_description_update"
+            placeholder="Since leaving day-to-day operations at Microsoft, Gates has continued his philanthropy and works on other projects." required></textarea></label>
           </div>
           </div>
           </div>
@@ -97,11 +97,12 @@ import '../../../node_modules/jquery/dist/jquery.min.js';
     };
 
     const updatePost = () => {
+      const updateValue = privateSettings.modal.find('.field__textarea').val();
       $.ajax({
         method: 'put',
         url: `http://localhost:3000/api/articles/${privateSettings.postID}`,
         data: {
-          description: 'some',
+          description: updateValue,
         },
       }).done(() => {
         location.reload();

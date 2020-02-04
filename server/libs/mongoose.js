@@ -24,7 +24,6 @@ let PostSchema = new mongoose.Schema({
   },
   preview:{
     type: Object,
-    required: true
   },
   head:{
     type: Object,
